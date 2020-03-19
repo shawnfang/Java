@@ -1,5 +1,5 @@
 package interfaceAndextends;
 
-public interface interfacedemo {
+public interface physicHero {
     public void physicAttack();
 }
