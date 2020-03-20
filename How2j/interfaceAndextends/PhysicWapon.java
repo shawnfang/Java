@@ -15,6 +15,19 @@ public class PhysicWapon extends Wapon {
         this.moveSpeed = moveSpeed;
         System.out.println("这是一个没有使用super的构造方法");
     }
+
+
+    // 调用父类方法
+    @Override
+    public void setAttrackSpeed(int attrackSpeed) {
+        super.setAttrackSpeed(attrackSpeed);
+    }
+
+    @Override
+    public int getAttrackSpeed() {
+        return super.getAttrackSpeed();
+    }
+
     // 调用父类属性
     public float  getMoveSpeed(){
         return super.moveSpeed;
@@ -23,5 +36,9 @@ public class PhysicWapon extends Wapon {
     public static void main(String[] args) {
         new PhysicWapon("倚天剑");
         new PhysicWapon("打狗棍",1000);
+        PhysicWapon p = new PhysicWapon();
+        System.out.println(p.toString());
+        p.setAttrackSpeed(100);
+        p.getAttrackSpeed();
     }
 }
