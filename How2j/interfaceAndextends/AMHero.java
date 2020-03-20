@@ -1,8 +1,9 @@
-package interfaceAndextends;
+package interfaceAndExtends;
 
 import objectOriented.Hero;
 
 public class AMHero extends HeroBoss implements magicHero,physicHero,Mortal {
+
     @Override
     public void die() {
         System.out.println("这是AMHero的die方法");

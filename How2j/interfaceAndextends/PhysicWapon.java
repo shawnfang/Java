@@ -1,4 +1,4 @@
-package interfaceAndextends;
+package interfaceAndExtends;
 
 public class PhysicWapon extends Wapon {
 

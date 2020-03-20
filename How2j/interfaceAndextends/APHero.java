@@ -1,4 +1,4 @@
-package interfaceAndextends;
+package interfaceAndExtends;
 
 public class APHero extends HeroBoss implements physicHero,Mortal {
     @Override
