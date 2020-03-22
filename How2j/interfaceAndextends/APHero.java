@@ -26,5 +26,8 @@ public class APHero extends HeroBoss implements physicHero,Mortal {
         HeroBoss.battleWin();
         HB.battleWin();
 
+        // 接口默认的方法
+        AP.revive();
+
     }
 }
