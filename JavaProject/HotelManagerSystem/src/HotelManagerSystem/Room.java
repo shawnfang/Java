@@ -32,7 +32,7 @@ public class Room {
                 System.out.println("请输入身份ID");
                 customer.customerId = sc.next();
                 status = false;
-                System.out.println("已入住成功");
+                System.out.println("已入住成功,房间号是："+roomNumber);
                 break;
             }else {
                 System.out.println("房间已被"+customer.name + "入住");

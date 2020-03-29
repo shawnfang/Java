@@ -10,7 +10,11 @@ public class Hotel {
             rm[i] = new Room();
             rm[i].status = true;
             rm[i].customer = new Customer();
-            rm[i].roomNumber = i + 100;
+            rm[i].roomNumber = i;
+        }
+        for (Room i: rm) {
+            System.out.println(i.roomNumber);
+            System.out.println(i.customer);
         }
         while (true) {
             System.out.println("请输入你要的操作search/in/out");
@@ -33,11 +37,11 @@ public class Hotel {
                 rm[roomNo].outRoom();
             }else if(str.equals("quite")){
                 System.out.println("欢迎再次光临");
+                break;
             }
             else {
                 System.out.println("未知");
             }
-
         }
     }
 
