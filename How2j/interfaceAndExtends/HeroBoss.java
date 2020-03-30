@@ -1,5 +1,7 @@
 package interfaceAndExtends;
 
+import java.net.PortUnreachableException;
+
 public class HeroBoss {
     public String name;
     public int hp;
@@ -12,6 +14,12 @@ public class HeroBoss {
 
     public  void kill(Mortal m){
         m.die();
+    }
+    public HeroBoss(){
+
+    }
+    public HeroBoss(String name){
+       this.name = name;
     }
 
     public static void battleWin(){

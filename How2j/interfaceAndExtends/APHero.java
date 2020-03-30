@@ -16,6 +16,13 @@ public class APHero extends HeroBoss implements physicHero,Mortal {
         System.out.println("ap hero battle win");
     }
 
+    public APHero(String name){
+        super(name);
+    }
+    public APHero(){
+
+    }
+
     public static void main(String[] args) {
         APHero AP = new APHero();
         HeroBoss HB = new APHero();
