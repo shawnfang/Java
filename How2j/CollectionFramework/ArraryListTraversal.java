@@ -23,6 +23,9 @@ public class ArraryListTraversal {
         System.out.println("第二种遍历 使用迭代器");
         Iterator<HeroBoss> it = heroes.iterator();
         System.out.println(" 使用while");
+        //从最开始的位置判断"下一个"位置是否有数据
+        //如果有就通过next取出来，并且把指针向下移动
+        //直到"下一个"位置没有数据
         while (it.hasNext()){
             HeroBoss h1 = it.next();
             System.out.println(h1);
@@ -38,31 +41,28 @@ public class ArraryListTraversal {
             System.out.println(h);
         }
 
+        //首先初始化一个Hero集合，里面放100个Hero对象，名称分别是从
+        //hero 0
+        //hero 1
+        //hero 2
+        //...
+        //hero 99.
+        //
+        //通过遍历的手段，删除掉名字编号是8的倍数的对象
         ArrayList<HeroBoss> hb = new ArrayList<>();
         for(int i = 0;i < 100;i++){
             hb.add(new HeroBoss("hero"+i));
         }
+        System.out.println("~~~~~~~~~~~~~~分割线~~~~~~~~~~~~~~~~~");
+        for (int n = 0;n < hb.size(); n++ ){
+            if(n%7==0){
+                hb.remove(n);
+            }
+        }
         for (HeroBoss h: hb){
             System.out.println(h.name);
         }
-        System.out.println("~~~~~~~~~~~~~~分割线~~~~~~~~~~~~~~~~~");
-        ArrayList<HeroBoss> del = new ArrayList<>();
-        for (int n = 0;n < 100; n++ ){
-            if(n%8==0){
-                for (HeroBoss s1 : hb) {
-                    del.add(s1);
-                }
 
-            }else {
-                for (HeroBoss s : del) {
-                    hb.remove(s);
-                }
-            }
-
-        }
-        for (HeroBoss ss : del){
-            System.out.println(ss);
-        }
 
     }
 }
