@@ -1,4 +1,4 @@
-package classAndObject;
+package DesignPatternDemo;
 
 public class HungrySingletonGiantDragon {
     //私有化构造方法使得该类无法在外部通过new 进行实例化

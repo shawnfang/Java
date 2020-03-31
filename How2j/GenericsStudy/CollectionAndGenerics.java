@@ -26,7 +26,7 @@ public class CollectionAndGenerics {
         //使用泛型的好处：
         //泛型的用法是在容器后面添加<Type>
         //Type可以是类，抽象类，接口
-        //泛型表示这种容器，只能存放APHero，ADHero就放不进去了。
+        //泛型表示这种容器，只能存放AMHero，APHero就放不进去了。
         ArrayList<AMHero> heroa = new ArrayList<AMHero>();
         // 只放的进AMHero类型
         heroa.add(new AMHero());

@@ -1,4 +1,4 @@
-package classAndObject;
+package DesignPatternDemo;
 
 public class HungrySingletonHero {
     private HungrySingletonHero(){

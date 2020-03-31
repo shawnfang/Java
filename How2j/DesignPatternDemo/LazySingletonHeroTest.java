@@ -1,4 +1,4 @@
-package classAndObject;
+package DesignPatternDemo;
 
 public class LazySingletonHeroTest {
     public static void main(String[] args) {
