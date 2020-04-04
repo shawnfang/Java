@@ -42,7 +42,7 @@ public class ArraryListTest {
         System.out.println(hero.indexOf(SpecialHero));
 
         // 删除对象 remove
-        System.out.println(hero.remove(2));
+            System.out.println(hero.remove(2));
         System.out.println(hero.toString());
 
         // 替换对象 set

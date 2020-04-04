@@ -14,12 +14,12 @@ public class ParseHibernateAnnotation {
     public static void main(String[] args) {
 
         Class<AnnotationHero> clazz = AnnotationHero.class;
-        MyEntity myEntity = (MyEntity) clazz.getAnnotation(MyEntity.class);
+        MyEntity myEntity = clazz.getAnnotation(MyEntity.class);
         if (null == myEntity) {
             System.out.println("Hero类不是实体类");
         } else {
             System.out.println("Hero类是实体类");
-            MyTable myTable= (MyTable) clazz.getAnnotation(MyTable.class);
+            MyTable myTable= clazz.getAnnotation(MyTable.class);
             String tableName = myTable.name();
             System.out.println("其对应的表名是:" + tableName);
             Method[] methods =clazz.getMethods();

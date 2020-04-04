@@ -17,7 +17,7 @@ public class ArraryListTraversal {
         System.out.println("第一种遍历 for循环");
         for(int i = 0;i < heroes.size(); i++){
             HeroBoss h = heroes.get(i);
-            System.out.println(h);
+            System.out.println(h.name);
         }
 
         System.out.println("第二种遍历 使用迭代器");
