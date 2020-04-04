@@ -4,6 +4,9 @@ import interfaceAndExtends.HeroBoss;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.lang.String;
+import java.util.Map;
+import java.util.Iterator;
+
 import CollectionFramework.ArraryListHero;
 public class HashMapclass {
     //对于HashMap而言，key是唯一的，不可以重复的。
@@ -36,25 +39,31 @@ public class HashMapclass {
         //2. 借助HashMap，找出结果，并统计花费的时间
         // 方法1
         HashMap<String,ArraryListHero>  dictionaryHero = new HashMap<String, ArraryListHero>();
-        for(int i =0;i< 1000000;i++){
+        for(int i =0;i< 3000000;i++){
             dictionaryHero.put(Integer.toString(i),new ArraryListHero("hero"+"-"+(int)(Math.random()*8900+1000)));
         }
         // 没写完
-        for(String key:dictionaryHero.keySet()){
-            if(dictionaryHero.get(key).equals("hero-5555")){
-                dictionaryHero.remove(dictionaryHero.key);
+        long start1 =System.currentTimeMillis();
+        for(Iterator<Map.Entry<String,ArraryListHero>> it = dictionaryHero.entrySet().iterator();it.hasNext();){
+            Map.Entry<String,ArraryListHero> item = it.next();
+            String key = item.getKey();
+            ArraryListHero val = item.getValue();
+            if(dictionaryHero.get(key).name.equals("hero-5555")){
+                it.remove();
             }
         }
-        System.out.println("~~~~~~~~~~~分割线1号~~~~~~~~"+dictionaryHero.size());
+        long end1 =System.currentTimeMillis();
+        System.out.printf("消耗时长:%d毫秒 %n",end1-start1);
 
 
 
         //方法2
+
         ArrayList<HeroBoss> h = new ArrayList<>();
-        ArrayList<HeroBoss> h2= new ArrayList<>();
         for(int i = 0; i<3000000;i++){
             h.add(new HeroBoss("hero"+"-"+(int)(Math.random()*8900+1000)));
         }
+        long start2 =System.currentTimeMillis();
         for(int i=0;i<h.size();i++){
             //System.out.println(h.get(i).name);
             String hero55 = "hero-5555";
@@ -63,6 +72,7 @@ public class HashMapclass {
             }else{
             }
         }
-        System.out.println("分割线~~~~~~~~~~~~~~~~~"+h.size());
+        long end2 =System.currentTimeMillis();
+        System.out.printf("消耗时长:%d毫秒 %n",end2-start2);
     }
 }
