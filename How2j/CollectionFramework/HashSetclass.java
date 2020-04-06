@@ -9,7 +9,10 @@ public class HashSetclass {
         names.add("gareen");
         System.out.println(names);
         //第二次插入同样的数据，是插不进去的，容器中只会保留一个
-        names.add("gareen");
+        names.add("gareen1");
+        System.out.println(names);
+
+        names.add("gareen2");
         System.out.println(names);
 
         //Set不提供get()来获取指定位置的元素
