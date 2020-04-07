@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--通过注解的方式进行配置-->
+    <context:annotation-config />
+    <!--通过关键字c即可获取Category对象，该对象获取的时候，即被注入了字符串"category 1“到name属性中-->
+    <bean name="c" class="pojo.Category">
+        <property name="name" value="category 1" />
+        <property name="id" value="1"  />
+    </bean>
+    <bean name="p" class="pojo.Product">
+        <property name="productName" value="chanpin 1 hao" />
+        <property name="id" value="1000"/>
+        <!--在创建Product的时候注入一个Category对象
+            注意，这里要使用ref来注入另一个对象-->
+        <property name="category" ref="c"/>
+    </bean>
+    <bean name="co" class="pojo.CategoryOther">
+        <property name="name" value="other category"/>
+    </bean>
+</beans>
