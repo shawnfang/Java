@@ -13,6 +13,41 @@
     <!---->
     <!--通过注解的方式进行配置-->
     <context:annotation-config />
+
+    <!--配置连接数据库的驱动，URL，账号和密码-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName">
+            <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:mysql://localhost:3306/how2j?characterEncoding=UTF-8</value>
+        </property>
+        <property name="username">
+            <value>root</value>
+        </property>
+        <property name="password">
+            <value>123456</value>
+        </property>
+    </bean>
+
+    <!--扫描XML配置文件-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="typeAliasesPackage" value="pojo" />
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+    </bean>
+
+    <!--扫描Mapper类-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="mapper"/>
+    </bean>
+
+
+
+
+
+
+
     <!--通过关键字c即可获取Category对象，该对象获取的时候，即被注入了字符串"category 1“到name属性中-->
     <bean name="c" class="pojo.Category">
         <property name="name" value="category 1" />
