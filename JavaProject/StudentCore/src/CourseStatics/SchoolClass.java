@@ -15,12 +15,12 @@ public class SchoolClass {
     public double searchCourseScore(String Sname,String Cname){
         double score =0;
         for (Student i: student){
-            if(i.getName().equals(Sname) && i.getCourse().equals(Cname)){
-                for (Course c: i.getCourse()){
-                   score = c.getScore();
+            if(i.getName().contains(Sname)){
+                for(Course c:i.getCourse()){
+                    if(c.getName().equals(Cname)) {
+                        score = c.getScore();
+                    }
                 }
-            }else {
-                score = 1;
             }
         }
         return score;
@@ -30,16 +30,18 @@ public class SchoolClass {
     public  double avgCourseScore(String Cname){
         double avg = 0;
         double sum = 0;
+        HashSet<Student> st = new HashSet<>();
         for (Student s: student){
             for (Course c : s.getCourse()){
-                if(c.getName().equals(Cname)){
-                    courses.add(c);
-                    sum += c.getScore();
-                }
+                    if(c.getName().contains(Cname)){
+                        st.add(s);
+                        sum += c.getScore();
+                    }
+
             }
         }
-        if (courses.size() !=0) {
-            avg = sum / courses.size();
+        if (st.size() !=0) {
+            avg = sum / st.size();
         }
         return avg;
     }
