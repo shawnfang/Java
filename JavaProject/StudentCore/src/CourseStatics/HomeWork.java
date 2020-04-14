@@ -23,9 +23,9 @@ public class HomeWork {
         sc1.addStudent(s2);
         sc1.addStudent(s3);
 
-        //System.out.println(s2.totalScore());
-        //System.out.println(s2.avgScore());
-        //System.out.println(sc1.avgCourseScore("math"));
+        System.out.println(s2.totalScore());
+        System.out.println(s2.avgScore());
+        System.out.println(sc1.avgCourseScore("math"));
         System.out.println(sc1.searchCourseScore("xiaohong","english"));
 
     }
