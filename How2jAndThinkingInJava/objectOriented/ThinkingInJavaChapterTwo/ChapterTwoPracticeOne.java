@@ -1,5 +1,8 @@
 package objectOriented.ThinkingInJavaChapterTwo;
 
+
+// 创建一个类，包含了int,char 域，他们都没有被初始化，将他们的值打印出来，以验证Java执行了默认初始化
+//练习1
 public class ChapterTwoPracticeOne {
     int a;
     char b;
