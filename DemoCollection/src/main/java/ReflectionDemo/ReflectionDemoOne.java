@@ -1,7 +1,6 @@
-package demo;
+package ReflectionDemo;
 import java.lang.reflect.*;
-import java.util.ArrayList;
-import java.util.List;
+
 import com.alibaba.fastjson.JSON;
 
 public class ReflectionDemoOne {

@@ -1,4 +1,4 @@
-package demo;
+package ReflectionDemo;
 
 public class HelloWorld {
     public static void main(String[] args) {
