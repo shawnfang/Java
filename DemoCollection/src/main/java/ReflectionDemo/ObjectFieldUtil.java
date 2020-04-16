@@ -17,7 +17,7 @@ import java.util.Map;
  * 实体属性操作工具类
  *
  * @author shawnfang
- * @date 2017年5月10日下午5:56:59
+ * @date 2020年4月15日下午5:56:59
  */
 public class ObjectFieldUtil {
     private static Logger log = LoggerFactory.getLogger(ObjectFieldUtil.class);
