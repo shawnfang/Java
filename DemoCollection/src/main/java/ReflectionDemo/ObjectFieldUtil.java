@@ -1,27 +1,26 @@
 package ReflectionDemo;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
+import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 实体属性操作工具类
  *
- * @author shawnfang
- * @date 2020年4月15日下午5:56:59
+ * @author heyonggang
+ * @date 2020年4月10日下午5:56:59
  */
 public class ObjectFieldUtil {
     private static Logger log = LoggerFactory.getLogger(ObjectFieldUtil.class);
-
+    private static String v = "\"\"";
+    private static String t = "[]";
+    private static Map<Object,String> tempMap = new HashMap<>();
     /**
      * 根据属性名获取属性值
      *
@@ -66,7 +65,6 @@ public class ObjectFieldUtil {
      */
     public static List<Map<String, Object>> getFiledsInfo(Object o) {
         Field[] fields = o.getClass().getDeclaredFields();
-//      String[] fieldNames = new String[fields.length];
         List<Map<String, Object>> list = new ArrayList<>();
         Map<String, Object> infoMap = null;
         for (int i = 0; i < fields.length; i++) {
@@ -74,7 +72,8 @@ public class ObjectFieldUtil {
             infoMap.put("type", fields[i].getType().toString());
             infoMap.put("name", fields[i].getName());
             infoMap.put("fieldName",fields[i]);
-            infoMap.put("value", getFieldValueByName(fields[i].getName(), o));
+            // 由于部分实体对象中包含了静态变量，导致get值的时候出现异常，所以暂时先注释
+            //infoMap.put("value", getFieldValueByName(fields[i].getName(), o));
             list.add(infoMap);
         }
         return list;
@@ -154,42 +153,61 @@ public class ObjectFieldUtil {
         return cla;
     }
 
+    public static String getFieldInfoList(Object FieldObject) throws IllegalAccessException, InstantiationException {
+        List templist= new ArrayList();
+        @SuppressWarnings("rawtypes")
+        Class cla=ObjectFieldUtil.getFieldClass((Field) FieldObject);
+        Object clazz = cla.newInstance();
+        List<Map<String,Object>> filedsInfoSubs = ObjectFieldUtil.getFiledsInfo(clazz);
+        for (Map<String,Object> filedsInfoSub:filedsInfoSubs) {
+            if(filedsInfoSub.get("type").equals("interface java.util.List")){
+                tempMap.put(filedsInfoSub.get("name"),t);
+            } else {
+                tempMap.put(filedsInfoSub.get("name"), v);
+            }
+        }
+        templist.add(tempMap);
+        return templist.toString();
+    }
+
+    public static String getFieldInfoMap(Object FieldObject) throws IllegalAccessException, InstantiationException {
+        @SuppressWarnings("rawtypes")
+        Class cla=ObjectFieldUtil.getFieldClass((Field) FieldObject);
+        Object clazz = cla.newInstance();
+        List<Map<String,Object>> filedsInfoSubs = ObjectFieldUtil.getFiledsInfo(clazz);
+        for (Map<String,Object> filedsInfoSub:filedsInfoSubs) {
+            if(filedsInfoSub.get("type").equals("interface java.util.List")){
+                tempMap.put(filedsInfoSub.get("name"),t);
+            } else {
+                tempMap.put(filedsInfoSub.get("name"), v);
+            }
+        }
+        return tempMap.toString();
+    }
+
 
     @SuppressWarnings("unchecked")
-    public  static Map<Object, String> ObjToJson(Object obj) throws IllegalAccessException, InstantiationException {
-
+    public  static String ObjToJson(Object obj) throws IllegalAccessException, InstantiationException {
         List<Map<String,Object>> filedsInfos = ObjectFieldUtil.getFiledsInfo(obj);
         Map<Object,String> jsonMap = new HashMap<>();
-        Map<Object,String> tempMap = new HashMap<>();
-        String v = "\"\"";
-        String t = "[]";
-        List templist= new ArrayList();
         for (Map<String,Object> fieldInfo:filedsInfos){
-            /*
-            System.out.println("字段返回类型 "+ObjectFieldUtil.getFieldClass((Field) fieldInfo.get("fieldName")));
-            System.out.println("字段名字 "+fieldInfo.get("name"));
-            System.out.println("字段类型 "+fieldInfo.get("type"));
-             */
             if(ObjectFieldUtil.getFieldClass((Field) fieldInfo.get("fieldName")).getClassLoader() != null && fieldInfo.get("type").equals("interface java.util.List")){
-                @SuppressWarnings("rawtypes")
-                Class cla=ObjectFieldUtil.getFieldClass((Field) fieldInfo.get("fieldName"));
-                Object clazz = cla.newInstance();
-                List<Map<String,Object>> filedsInfoSubs = ObjectFieldUtil.getFiledsInfo(clazz);
-                for (Map<String,Object> filedsInfoSub:filedsInfoSubs) {
-                    tempMap.put(filedsInfoSub.get("name"), v);
-                }
-                templist.add(tempMap);
-                jsonMap.put(fieldInfo.get("name"), templist.toString());
-            }else {
+                String fieldList = ObjectFieldUtil.getFieldInfoList(fieldInfo.get("fieldName"));
+                jsonMap.put(fieldInfo.get("name"), fieldList);
+            }else if((ObjectFieldUtil.getFieldClass((Field) fieldInfo.get("fieldName")).getClassLoader() != null)){
+                String fieldMap = ObjectFieldUtil.getFieldInfoMap(fieldInfo.get("fieldName"));
+                jsonMap.put(fieldInfo.get("name"), fieldMap);
+            }else if(fieldInfo.get("type").equals("interface java.util.List")){
+                jsonMap.put(fieldInfo.get("name"),t);
+            } else {
                 jsonMap.put(fieldInfo.get("name"), v);
             }
         }
-        System.out.println("test1 "+tempMap);
-        System.out.println("test2 "+jsonMap);
-        return jsonMap;
+        return jsonMap.toString();
     }
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
-        System.out.println(ObjectFieldUtil.ObjToJson("test"));
+        System.out.println("HELLO,WORLD");
+
     }
 }
