@@ -1,26 +1,32 @@
 package ReflectionDemo;
+
+import com.alibaba.fastjson.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
-import java.lang.reflect.*;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * 实体属性操作工具类
  *
- * @author heyonggang
+ * @author shawnfang
  * @date 2020年4月10日下午5:56:59
  */
 public class ObjectFieldUtil {
     private static Logger log = LoggerFactory.getLogger(ObjectFieldUtil.class);
-    private static String v = "\"\"";
-    private static String t = "[]";
-    private static Map<Object,String> tempMap = new HashMap<>();
+    private static String v = "";
+    private static List t = new ArrayList();
+    private static Map<String,Object> tempMap = new HashMap<>();
     /**
      * 根据属性名获取属性值
      *
@@ -118,7 +124,7 @@ public class ObjectFieldUtil {
     }
 
     /**
-     * 获取field的类型，636f70797a686964616f31333337616537如果是复合对象，获取的是泛型的类型
+     * 获取field的类型，如果是复合对象，获取的是泛型的类型
      *
      * @param field
      * @return
@@ -127,13 +133,14 @@ public class ObjectFieldUtil {
         Class fieldClazz = field.getType();
 
         if (fieldClazz.isAssignableFrom(List.class)) {
-            Type fc = field.getGenericType(); // 关键的地方，如果是List类型，得到其Generic的类型
-
-            if (fc instanceof ParameterizedType) // 如果是泛型参数的类型
+            // 关键的地方，如果是List类型，得到其Generic的类型
+            Type fc = field.getGenericType();
+            // 如果是泛型参数的类型
+            if (fc instanceof ParameterizedType)
             {
                 ParameterizedType pt = (ParameterizedType) fc;
-
-                fieldClazz = (Class) pt.getActualTypeArguments()[0]; //得到泛型里的class类型对象。
+                //得到泛型里的class类型对象。
+                fieldClazz = (Class) pt.getActualTypeArguments()[0];
             }
         }
 
@@ -153,61 +160,64 @@ public class ObjectFieldUtil {
         return cla;
     }
 
-    public static String getFieldInfoList(Object FieldObject) throws IllegalAccessException, InstantiationException {
+    public static List<?> getFieldInfoList(Object FieldObject) throws IllegalAccessException, InstantiationException {
         List templist= new ArrayList();
         @SuppressWarnings("rawtypes")
-        Class cla=ObjectFieldUtil.getFieldClass((Field) FieldObject);
+        Class cla= ObjectFieldUtil.getFieldClass((Field) FieldObject);
         Object clazz = cla.newInstance();
         List<Map<String,Object>> filedsInfoSubs = ObjectFieldUtil.getFiledsInfo(clazz);
         for (Map<String,Object> filedsInfoSub:filedsInfoSubs) {
             if(filedsInfoSub.get("type").equals("interface java.util.List")){
-                tempMap.put(filedsInfoSub.get("name"),t);
+                tempMap.put(filedsInfoSub.get("name").toString(),t);
             } else {
-                tempMap.put(filedsInfoSub.get("name"), v);
+                tempMap.put(filedsInfoSub.get("name").toString(), v);
             }
         }
-        templist.add(tempMap);
-        return templist.toString();
+        JSONObject jsonObject = new JSONObject(tempMap);
+        templist.add(jsonObject);
+        return templist;
     }
 
-    public static String getFieldInfoMap(Object FieldObject) throws IllegalAccessException, InstantiationException {
+    public static Map<?,?> getFieldInfoMap(Object FieldObject) throws IllegalAccessException, InstantiationException {
         @SuppressWarnings("rawtypes")
-        Class cla=ObjectFieldUtil.getFieldClass((Field) FieldObject);
+        Class cla= ObjectFieldUtil.getFieldClass((Field) FieldObject);
         Object clazz = cla.newInstance();
         List<Map<String,Object>> filedsInfoSubs = ObjectFieldUtil.getFiledsInfo(clazz);
         for (Map<String,Object> filedsInfoSub:filedsInfoSubs) {
             if(filedsInfoSub.get("type").equals("interface java.util.List")){
-                tempMap.put(filedsInfoSub.get("name"),t);
+                tempMap.put(filedsInfoSub.get("name").toString(),t);
             } else {
-                tempMap.put(filedsInfoSub.get("name"), v);
+                tempMap.put(filedsInfoSub.get("name").toString(), v);
             }
         }
-        return tempMap.toString();
+        JSONObject jsonObject = new JSONObject(tempMap);
+        return jsonObject;
     }
 
 
     @SuppressWarnings("unchecked")
     public  static String ObjToJson(Object obj) throws IllegalAccessException, InstantiationException {
         List<Map<String,Object>> filedsInfos = ObjectFieldUtil.getFiledsInfo(obj);
-        Map<Object,String> jsonMap = new HashMap<>();
+        Map<String,Object> jsonMap = new HashMap<>();
         for (Map<String,Object> fieldInfo:filedsInfos){
             if(ObjectFieldUtil.getFieldClass((Field) fieldInfo.get("fieldName")).getClassLoader() != null && fieldInfo.get("type").equals("interface java.util.List")){
-                String fieldList = ObjectFieldUtil.getFieldInfoList(fieldInfo.get("fieldName"));
-                jsonMap.put(fieldInfo.get("name"), fieldList);
+                List fieldList = ObjectFieldUtil.getFieldInfoList(fieldInfo.get("fieldName"));
+                jsonMap.put(fieldInfo.get("name").toString(), fieldList);
             }else if((ObjectFieldUtil.getFieldClass((Field) fieldInfo.get("fieldName")).getClassLoader() != null)){
-                String fieldMap = ObjectFieldUtil.getFieldInfoMap(fieldInfo.get("fieldName"));
-                jsonMap.put(fieldInfo.get("name"), fieldMap);
+                Map<?,?> fieldMap = ObjectFieldUtil.getFieldInfoMap(fieldInfo.get("fieldName"));
+                jsonMap.put(fieldInfo.get("name").toString(), fieldMap);
             }else if(fieldInfo.get("type").equals("interface java.util.List")){
-                jsonMap.put(fieldInfo.get("name"),t);
+                jsonMap.put(fieldInfo.get("name").toString(),t);
             } else {
-                jsonMap.put(fieldInfo.get("name"), v);
+                jsonMap.put(fieldInfo.get("name").toString(), v);
             }
         }
-        return jsonMap.toString();
+        JSONObject jsonObject = new JSONObject(jsonMap);
+        return jsonObject.toString();
     }
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
-        System.out.println("HELLO,WORLD");
+        System.out.println("hello,world");
 
     }
 }
