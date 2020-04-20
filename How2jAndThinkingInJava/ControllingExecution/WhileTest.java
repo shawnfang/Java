@@ -15,5 +15,6 @@ public class WhileTest {
             System.out.println("Inside 'while'");
         }
         System.out.println("Exited 'while'");
+        
     }
 }
