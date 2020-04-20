@@ -24,6 +24,4 @@ public class PropertyInitclass {
     static {
         itemCapacity = 100;
     }
-
-
 }

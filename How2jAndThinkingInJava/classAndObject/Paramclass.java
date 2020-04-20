@@ -5,9 +5,7 @@ public class Paramclass {
     float hp;
     float armor;
     int moveSpeed;
-
     public  Paramclass(){
-
     }
 
     public  void  huixue(int xp){
@@ -25,7 +23,6 @@ public class Paramclass {
     public void attack(Paramclass pc,int damage){
         pc.hp = pc.hp - damage;
     }
-
 
     public static void main(String[] args){
         Paramclass teem = new Paramclass("timo",222);

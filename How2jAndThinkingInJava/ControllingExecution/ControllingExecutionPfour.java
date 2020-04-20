@@ -1,20 +1,21 @@
 package ControllingExecution;
-
+// 获取质素
 public class ControllingExecutionPfour {
     public static void main(String[] args) {
-        int a;
-        int b;
-        for (int i = 1; i < 100; i++) {
-            for (int j = 2; j <= i; j++) {
-                if( j < i){
-                    if(j%i==0){
-                        System.out.println("这是一个合数" + i);
-                    }
+        int a=0;
+        for (int i = 1; i <= 100; i++) {
+            for (int j = 1; j < i; j++) {
+                if(i%j==0 & j!=1){
+                    a=0;
+                    break;
                 }else {
-                    System.out.println("这是一个质素:"+ i );
-                    System.out.println("这是一个:"+ j );
+                    a = i;
+                }
+            }
+            if(a!=0) {
+                    System.out.println("这是一个质素:"+ a );
                 }
             }
         }
     }
-}
+
