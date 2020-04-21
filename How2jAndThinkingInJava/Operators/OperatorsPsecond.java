@@ -9,7 +9,7 @@ class Tank{
 但是在为对象“赋值”的时候，情况却发生了变化。对一个对象进行操作的时候，我们真正操作的是对象的引用，
 所以倘若“将一个对象赋值给另一个对象”，实际上是将“引用”从一个地方复制到另一个地方
  */
-public class AssignmentCTPS {
+public class OperatorsPsecond {
     public static void main(String[] args) {
         Tank t1 = new Tank();
         Tank t2 = new Tank();

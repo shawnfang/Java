@@ -1,6 +1,6 @@
 package Operators;
 
-public class CalSpeedCTPF {
+public class OperatorsPfour {
     public static void main(String[] args) {
         int dictance = 1000;
         int hour = 2;

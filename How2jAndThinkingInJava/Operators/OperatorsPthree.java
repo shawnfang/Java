@@ -7,7 +7,7 @@ class Letter2{
     int s;
 }
 
-public class PassObjecCTPT {
+public class OperatorsPthree {
     static void f(Letter y){
         y.m = 10086.10f;
     }

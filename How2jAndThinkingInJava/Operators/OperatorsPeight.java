@@ -2,7 +2,7 @@ package Operators;
 
 import com.sun.xml.internal.fastinfoset.algorithm.IEEE754FloatingPointEncodingAlgorithm;
 
-public class ExponentsCTPN {
+public class OperatorsPeight {
     public static void main(String[] args) {
 
         long longMax = Long.MAX_VALUE;
