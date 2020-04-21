@@ -1,9 +1,7 @@
 package CollectionFramework;
 
-import interfaceAndExtends.HeroBoss;
-import objectOriented.Hero;
+import InterfaceAndExtends.HeroBoss;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class LinkedListStack implements Stack {

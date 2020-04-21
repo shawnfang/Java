@@ -1,5 +1,5 @@
 package CollectionFramework;
-import interfaceAndExtends.HeroBoss;
+import InterfaceAndExtends.HeroBoss;
 
 import java.util.LinkedList;
 import java.util.Queue;

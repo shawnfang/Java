@@ -1,11 +1,9 @@
 package GenericsStudy;
 import java.util.ArrayList;
 
-import CollectionFramework.ArraryListHero;
-import interfaceAndExtends.AMHero;
-import interfaceAndExtends.APHero;
-import interfaceAndExtends.HeroBoss;
-import interfaceAndExtends.LifePotion;
+import InterfaceAndExtends.AMHero;
+import InterfaceAndExtends.APHero;
+import InterfaceAndExtends.HeroBoss;
 
 //
 public class CollectionAndGenerics {

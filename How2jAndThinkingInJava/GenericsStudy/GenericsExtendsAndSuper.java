@@ -1,9 +1,8 @@
 package GenericsStudy;
 
-import interfaceAndExtends.APHero;
-import interfaceAndExtends.HeroBoss;
-import objectOriented.Hero;
-import interfaceAndExtends.AMHero;
+import InterfaceAndExtends.APHero;
+import InterfaceAndExtends.HeroBoss;
+import InterfaceAndExtends.AMHero;
 import java.util.ArrayList;
 
 public class GenericsExtendsAndSuper {

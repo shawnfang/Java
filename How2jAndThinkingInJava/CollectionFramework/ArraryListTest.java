@@ -1,8 +1,7 @@
 package CollectionFramework;
 
-import CollectionFramework.ArraryListHero;
 import java.util.ArrayList;
-import classAndObject.Heroclass;
+import ClassAndObject.Heroclass;
 
 public class ArraryListTest {
     public static void main(String[] args) {

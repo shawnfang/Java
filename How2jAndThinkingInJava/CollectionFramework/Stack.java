@@ -1,7 +1,6 @@
 package CollectionFramework;
 
-import interfaceAndExtends.HeroBoss;
-import objectOriented.Hero;
+import InterfaceAndExtends.HeroBoss;
 
 public interface Stack {
     public void push(HeroBoss h);

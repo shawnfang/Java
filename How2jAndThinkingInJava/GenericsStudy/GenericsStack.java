@@ -1,11 +1,10 @@
 package GenericsStudy;
-import java.util.HashMap;
 import java.util.LinkedList;
 
-import interfaceAndExtends.AMHero;
-import interfaceAndExtends.APHero;
-import interfaceAndExtends.HeroBoss;
-import interfaceAndExtends.ItemPotion;
+import InterfaceAndExtends.AMHero;
+import InterfaceAndExtends.APHero;
+import InterfaceAndExtends.HeroBoss;
+import InterfaceAndExtends.ItemPotion;
 
 
 //设计一个支持泛型的栈GenericsStack

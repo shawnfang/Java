@@ -1,9 +1,8 @@
 package CollectionFramework;
 
-import interfaceAndExtends.HeroBoss;
+import InterfaceAndExtends.HeroBoss;
 
 import java.util.Iterator;
-import java.util.List;
 import java.util.ArrayList;
 // ArraryList遍历
 public class ArraryListTraversal {

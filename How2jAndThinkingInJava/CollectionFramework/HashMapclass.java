@@ -1,5 +1,5 @@
 package CollectionFramework;
-import interfaceAndExtends.HeroBoss;
+import InterfaceAndExtends.HeroBoss;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,6 @@ import java.lang.String;
 import java.util.Map;
 import java.util.Iterator;
 
-import CollectionFramework.ArraryListHero;
 public class HashMapclass {
     //对于HashMap而言，key是唯一的，不可以重复的。
     //所以，以相同的key 把不同的value插入到 Map中会导致旧元素被覆盖，只留下最后插入的元素。
