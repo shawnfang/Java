@@ -1,4 +1,4 @@
-package ObjectOriented.ThinkingInJavaChapterTwo;
+package ThinkingInJava.ThinkingInJavaChapterTwo;
 
 
 //展示自动包装功能对所有的基本类型和包装器类型都起作用。

@@ -1,4 +1,4 @@
-package Operators;
+package ThinkingInJava.ThinkingInJavaChapterThree;
 
 public class OperatorsPfive {
     String name;

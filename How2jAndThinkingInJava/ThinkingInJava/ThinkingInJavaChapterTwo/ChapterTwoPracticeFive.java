@@ -1,4 +1,4 @@
-package ObjectOriented.ThinkingInJavaChapterTwo;
+package ThinkingInJava.ThinkingInJavaChapterTwo;
 
 // 完善storage代码段，学会调用方法并传值
 // 练习6

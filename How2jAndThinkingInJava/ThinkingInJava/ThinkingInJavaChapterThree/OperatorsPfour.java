@@ -1,4 +1,4 @@
-package Operators;
+package ThinkingInJava.ThinkingInJavaChapterThree;
 
 public class OperatorsPfour {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ControllingExecution;
+package ThinkingInJava.ThinkingInJavaChapterFour;
 // 打印1到100的值
 public class ControllingExecutionPone {
     public static void main(String[] args) {

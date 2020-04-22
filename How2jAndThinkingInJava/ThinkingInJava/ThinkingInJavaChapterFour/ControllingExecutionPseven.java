@@ -1,4 +1,4 @@
-package ControllingExecution;
+package ThinkingInJava.ThinkingInJavaChapterFour;
 
 public class ControllingExecutionPseven {
     static int testprint(int testval) {

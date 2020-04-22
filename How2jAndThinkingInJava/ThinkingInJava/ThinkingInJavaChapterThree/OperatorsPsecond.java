@@ -1,4 +1,4 @@
-package Operators;
+package ThinkingInJava.ThinkingInJavaChapterThree;
 
 class Tank{
     float level;

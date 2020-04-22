@@ -1,4 +1,4 @@
-package ObjectOriented.ThinkingInJavaChapterTwo;
+package ThinkingInJava.ThinkingInJavaChapterTwo;
 
 // 将INcremengtable的代码段改成一段完整程序
 // 展示无论创建多少个类对象，在这个类中的static域都只有一个实例

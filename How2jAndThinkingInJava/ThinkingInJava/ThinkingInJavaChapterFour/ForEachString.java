@@ -1,4 +1,4 @@
-package ControllingExecution;
+package ThinkingInJava.ThinkingInJavaChapterFour;
 
 // 任何返回一个数组的方法都可以使用foreach语法
 public class ForEachString {

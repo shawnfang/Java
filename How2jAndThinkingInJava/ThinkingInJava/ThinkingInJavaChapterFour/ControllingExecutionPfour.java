@@ -1,4 +1,4 @@
-package ControllingExecution;
+package ThinkingInJava.ThinkingInJavaChapterFour;
 // 获取质素
 public class ControllingExecutionPfour {
     public static void main(String[] args) {

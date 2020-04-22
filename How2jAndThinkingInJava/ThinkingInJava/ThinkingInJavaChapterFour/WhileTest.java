@@ -1,4 +1,4 @@
-package ControllingExecution;
+package ThinkingInJava.ThinkingInJavaChapterFour;
 /*
 while(Boolean-expression)
  statement
