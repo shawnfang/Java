@@ -34,10 +34,10 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://D:/mvn/net.mindview.util.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/net.mindview.util.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
