@@ -24,20 +24,20 @@ public class GenericsStack<T> {
     }
 
     public static void main(String[] args) {
-        GenericsStack<HeroBoss> heroboss = new GenericsStack<>();
+        GenericsStack<HeroBoss> heroboss = new GenericsStack<HeroBoss>();
         heroboss.push(new HeroBoss());
         // 可以放子类
         heroboss.push(new APHero());
         System.out.println(heroboss.values);
         // 不能放ItemPotion
         //heroboss.push(new ItemPotion());
-        GenericsStack<ItemPotion> ItemStack = new GenericsStack<>();
+        GenericsStack<ItemPotion> ItemStack = new GenericsStack<ItemPotion>();
         ItemStack.push(new ItemPotion());
         //不能放HeroBoss
         //ItemStack.push(new HeroBoss());
 
         // 可以放子类
-        GenericsStack<AMHero> am = new GenericsStack<>();
+        GenericsStack<AMHero> am = new GenericsStack<AMHero>();
         am.push(new AMHero());
 
     }

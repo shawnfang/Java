@@ -14,11 +14,11 @@ public class TestGenerics {
     }
 
     public static void main(String[] args) {
-        ArrayList<HeroBoss> h = new ArrayList<>();
+        ArrayList<HeroBoss> h = new ArrayList<HeroBoss>();
         h.add(new HeroBoss("fangxiao"));
-        ArrayList<APHero> ap = new ArrayList<>();
+        ArrayList<APHero> ap = new ArrayList<APHero>();
         ap.add(new APHero("xiaoxiaofang"));
-        ArrayList<AMHero> am = new ArrayList<>();
+        ArrayList<AMHero> am = new ArrayList<AMHero>();
         iterate(h);
         iterate(ap);
         iterate(am);
