@@ -41,9 +41,9 @@ public class CollectionAndGenerics {
         //heroBosses.add(new LifePotion());
 
         // 泛型简写 后面不需要写泛型的类型
-        ArrayList<HeroBoss> HB = new ArrayList<>();
+        ArrayList<HeroBoss> HB = new ArrayList<HeroBoss>();
         // 根据数字类的知识，设计一个集合，这个集合里即可以放整数，也可以放浮点数，但是不能放字符串
-        ArrayList<Number> nu = new ArrayList<>();
+        ArrayList<Number> nu = new ArrayList<Number>();
         nu.add(new Integer(1));
         nu.add(new Float(1));
         System.out.println(nu);

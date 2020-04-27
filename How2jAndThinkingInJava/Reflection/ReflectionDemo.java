@@ -45,7 +45,7 @@ public class ReflectionDemo {
 
 
 
-            List<String> list = new ArrayList<>();
+            List<String> list = new ArrayList<String>();
             Method setMethod = clazz.getDeclaredMethod("setName", String.class);
             //通过反射创建类对象
             Object ej = clazz.newInstance();
