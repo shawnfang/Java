@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d32f1eeb-af70-4d1b-9d2c-adf47c071325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GenericsStudy/GenericsDemoOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenericsStudy/GenericsDemoTwo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\github\Java\How2j\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZC9Jw9DOi4dJgriHbX95wriVlW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/SpringStudy/bin" />
+    <property name="last_opened_file_path" value="D:/usr/local/maven-rep/net.mindview.util.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="DesignPatternDemo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GenericsDemoThree">
+    <configuration name="ChapterThreePracticeFirst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Operators.ChapterThreePracticeFirst" />
+      <module name="How2jAndThinkingInJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Operators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllingExecutionPfour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ControllingExecution.ControllingExecutionPfour" />
+      <module name="How2jAndThinkingInJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ControllingExecution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllingExecutionPthree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ControllingExecution.ControllingExecutionPthree" />
+      <module name="How2jAndThinkingInJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ControllingExecution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericsDemoThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GenericsStudy.GenericsDemoThree" />
+      <module name="How2jAndThinkingInJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GenericsStudy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchVowelsAndConsonants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ControllingExecution.SwitchVowelsAndConsonants" />
+      <module name="How2jAndThinkingInJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ControllingExecution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GenericsDemoThree" />
+        <item itemvalue="Application.SwitchVowelsAndConsonants" />
+        <item itemvalue="Application.ControllingExecutionPfour" />
+        <item itemvalue="Application.ControllingExecutionPthree" />
+        <item itemvalue="Application.ChapterThreePracticeFirst" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d32f1eeb-af70-4d1b-9d2c-adf47c071325" name="Default Changelist" comment="" />
+      <created>1584332140617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584332140617</updated>
+      <workItem from="1584332145116" duration="1039000" />
+      <workItem from="1584496146434" duration="30045000" />
+      <workItem from="1584697128558" duration="12418000" />
+      <workItem from="1584947877285" duration="2165000" />
+      <workItem from="1585103940677" duration="1026000" />
+      <workItem from="1585109832293" duration="661000" />
+      <workItem from="1585117102634" duration="821000" />
+      <workItem from="1585119908160" duration="3331000" />
+      <workItem from="1585533248279" duration="6682000" />
+      <workItem from="1585646657197" duration="4131000" />
+      <workItem from="1585815967895" duration="1196000" />
+      <workItem from="1585822283719" duration="1193000" />
+      <workItem from="1586307438965" duration="5185000" />
+      <workItem from="1586333724413" duration="1418000" />
+      <workItem from="1586335997861" duration="1921000" />
+      <workItem from="1586339169677" duration="1179000" />
+      <workItem from="1586340460168" duration="1029000" />
+      <workItem from="1586343028079" duration="758000" />
+      <workItem from="1586344597947" duration="1879000" />
+      <workItem from="1586347352986" duration="9000" />
+      <workItem from="1586395234174" duration="17497000" />
+      <workItem from="1586826278158" duration="6756000" />
+      <workItem from="1586913682283" duration="60000" />
+      <workItem from="1586914389721" duration="339000" />
+      <workItem from="1586952271371" duration="667000" />
+      <workItem from="1587006493901" duration="2996000" />
+      <workItem from="1587345837947" duration="18373000" />
+      <workItem from="1587606968750" duration="1006000" />
+      <workItem from="1587630981118" duration="5000" />
+      <workItem from="1587986167964" duration="986000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="183" key="#Notifications" timestamp="1584581725970">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="183" key="#Notifications/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584581725970" />
+    <state x="552" y="183" key="#Project_Structure" timestamp="1584581362140">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="183" key="#Project_Structure/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584581362140" />
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1584698530230">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584698530230" />
+    <state x="690" y="305" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1585628550260">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="305" key="#com.intellij.ide.util.PackageChooserDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1585628550260" />
+    <state x="580" y="203" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1586308729283">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="580" y="203" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586308729283" />
+    <state x="613" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586913192968">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="613" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586913192968" />
+    <state x="739" y="409" width="441" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585628551803">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="739" y="409" width="441" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1585628551803" />
+    <state x="711" y="347" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1587377995723">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="711" y="347" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587377995723" />
+    <state x="761" y="347" key="FileChooserDialogImpl" timestamp="1587554599513">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="761" y="347" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587554599513" />
+    <state x="2681" y="347" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1586764978469" />
+    <state width="1921" height="292" key="GridCell.Tab.0.bottom" timestamp="1587605593764">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="292" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587605593764" />
+    <state width="1921" height="292" key="GridCell.Tab.0.center" timestamp="1587605593763">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="292" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587605593763" />
+    <state width="1921" height="292" key="GridCell.Tab.0.left" timestamp="1587605593763">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="292" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587605593763" />
+    <state width="1921" height="292" key="GridCell.Tab.0.right" timestamp="1587605593764">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="292" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587605593764" />
+    <state width="1877" height="342" key="GridCell.Tab.1.bottom" timestamp="1584947850468">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="342" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584947850468" />
+    <state width="1877" height="342" key="GridCell.Tab.1.center" timestamp="1584947850468">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="342" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584947850468" />
+    <state width="1877" height="342" key="GridCell.Tab.1.left" timestamp="1584947850468">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="342" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584947850468" />
+    <state width="1877" height="342" key="GridCell.Tab.1.right" timestamp="1584947850468">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="342" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584947850468" />
+    <state x="600" y="222" key="NewModule_or_Project.wizard" timestamp="1587554603926">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="600" y="222" key="NewModule_or_Project.wizard/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587554603926" />
+    <state x="2520" y="222" key="NewModule_or_Project.wizard/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1586765011025" />
+    <state x="470" y="199" key="SettingsEditor" timestamp="1587378007414">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="470" y="199" key="SettingsEditor/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587378007414" />
+    <state x="640" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1587606969574">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="349" key="com.intellij.ide.util.TipDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587606969574" />
+    <state x="752" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586913123186">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="752" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586913123186" />
+    <state x="334" y="135" key="new project wizard" timestamp="1586307829472">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="334" y="135" key="new project wizard/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586307829472" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1584929752946">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1584929752946" />
+    <state x="640" y="208" key="spring file set editor" timestamp="1586309598836">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="208" key="spring file set editor/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586309598836" />
+  </component>
+</project>

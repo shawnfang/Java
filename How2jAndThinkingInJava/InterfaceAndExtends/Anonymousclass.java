@@ -11,7 +11,13 @@ public  abstract  class Anonymousclass {
         Wapon W = new Wapon();
         W.attrackSpeed = 100;
         System.out.println(W.attrackSpeed);
-
+        /*
+        匿名内部类
+        new SuperType(construction parameters){
+            inner class methods and data
+        }
+        如果superType是接口，内部类就是为了实现这个接口，如果是类，内部类就是为了扩展这个类
+        * */
         // 匿名类指的是在声明一个类的同时实例化它，使代码更加简洁精练
         //通常情况下，要使用一个接口或者抽象类，都必须创建一个子类
         //
