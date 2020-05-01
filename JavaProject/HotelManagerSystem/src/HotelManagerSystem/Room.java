@@ -1,7 +1,6 @@
 package HotelManagerSystem;
 
 import java.util.Scanner;
-
 public class Room {
     public Integer roomNumber;
     public Customer customer;
