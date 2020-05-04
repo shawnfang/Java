@@ -1,0 +1,60 @@
+1.指出下面语句没有编译错误的是:
+A.long n = 999999999999;
+B.int n = 999999999999L;
+C.long n = 999999999999L; 
+D.double n = 999999999999;
+answer=C
+@2.下列关于数组的声明错误的是:
+A.int[] arry = new int[100];
+B.int[3] arry = {1,2,3};
+C.int[] arry = new int[]{1,2,3};
+D.int[][] arry = new int[3][];
+answer=B
+@3.语句System.out.println(1+2+"java"+3+4)输出的结果是:
+A.3java34;
+B.12java34;
+C.3java7;
+D.12java7;
+answer=A
+@4.Java语言中int类型标示整数的最大范围是:
+A.-2147483647~ 2147483647;
+B.<T>-2147483648 ~2147483647; 
+C.-32767~32767;
+D.-32768~32767;
+answer=B
+@5.Java语言中字符串“学Java”所占的内存空间是:
+A.6个字节;
+B.7个字节;
+C.10个字节;
+D.11个字节;
+answer=B
+@6.对JDK描述错误的是:
+A.运行Java程序只要有JRE环境就可以，不一定需要全部JDK的功能;
+B.JDK中包括JVM、核心类库、Java开发工具(java，javac)等;
+C.JDK本身也是平台无关的，不同的操作系统安装的JDK是一样的;
+D.JDK的全称是 Java Development Kit;
+answer=B
+@7.对CLASSPATH描述正确的是:
+A.设置CLASSPATH用于指示操作系统找到JDK命令，如java或javac;
+B.CLASSPATH设置不对，可能会导致java命令失败，但不会导致javac失败;
+C.CLASSPATH的设置中可以包含目录路径但不可以包含文件路径;
+D.java命令可以通过 -cp 参数指定类路径;
+answer=B
+@8.下面Java语言方法的说法错误的是:
+A.方法调用时参数类型必须符合方法的定义;
+B.方法只能声明一个返回值;
+C.如果方法没有返回值必须声明返回为void;
+D.如果方法定义为返回void，则方法中不能出现return语句;
+answer=B
+@9.下面不属于Java语言特点的是:
+A.平台无关;
+B.面向对象;
+C.支持指针操作;
+D.垃圾回收机制;
+answer=B
+@10.关于数组的说法正确的是:
+A.数组类型属于基本类型;
+B.数组创建后，其的长度可以改变;
+C.int[]类型的变量可以直接赋值给long[]类型的变量;
+D.数组的长度必须在创建是指定;
+answer=B
