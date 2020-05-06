@@ -58,18 +58,23 @@ public class Test {
             String sPassword = scan.next();
             user.setAccount(sNumber);
             user.setPassword(sPassword);
+            if(!Test.studentsList().contains(user)){
+                System.out.println("用户名不存在");
+                continue;
+            }
             for (Student s : Test.studentsList()) {
-                if (!s.getAccount().contains(user.getAccount())){
-                    continue;
-                }else {
+                if (s.getAccount().contains(user.getAccount())){
                     System.out.println("这是正确的用户名");
                     System.out.println(s.getAccount());
                     if (!s.getPassword().equals(user.getPassword())){
                         System.out.println("错误的密码");
-                        break;
+                        continue;
                     }else {
                         System.out.println("登录成功 ");
                     }
+                }
+                else {
+                    continue;
                 }
 
             }
