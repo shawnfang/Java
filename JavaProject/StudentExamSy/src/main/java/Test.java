@@ -23,7 +23,6 @@ public class Test {
         */
 
         for(Student s:studentsList()){
-            System.out.println(s.getName());
             System.out.println(s.getAccount());
             System.out.println(s.getPassword());
         }
@@ -43,7 +42,6 @@ public class Test {
             String[] s2 = s1.split(" ");
             Student student = new Student();
             student.setAccount(s2[0].trim());
-            student.setName(s2[1].trim());
             student.setPassword(s2[2].trim());
             students.add(student);
         }
@@ -51,28 +49,35 @@ public class Test {
     }
 
     public static Student login() throws IOException {
+        Student user = new Student();
         while (true) {
             System.out.println("请输入你的学号");
             Scanner scan = new Scanner(System.in);
             String sNumber = scan.next();
             System.out.println("请输入你的密码");
             String sPassword = scan.next();
-            Student user = new Student(sNumber,sPassword);
-            for(Student s:Test.studentsList()) {
-                if (!sNumber.equals(s.getAccount())) {
-                    System.out.println("没有该学号");
-                    break;
-                } else if (!sPassword.equals(s.getPassword())) {
-                    System.out.println("密码错误");
-                    break;
-                } else {
-                    user.setAccount(sNumber);
-                    user.setPassword(sPassword);
-                    return user;
+            user.setAccount(sNumber);
+            user.setPassword(sPassword);
+            for (Student s : Test.studentsList()) {
+                if (!s.getAccount().contains(user.getAccount())){
+                    continue;
+                }else {
+                    System.out.println("这是正确的用户名");
+                    System.out.println(s.getAccount());
+                    if (!s.getPassword().equals(user.getPassword())){
+                        System.out.println("错误的密码");
+                        break;
+                    }else {
+                        System.out.println("登录成功 ");
+                    }
                 }
+
             }
+            return user;
         }
+
     }
+
     public static List<TestPaper> readUserTestPapers(String userPathName){
         List<TestPaper> userTestPaper = new ArrayList<>();
         return userTestPaper;
