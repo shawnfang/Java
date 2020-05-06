@@ -4,9 +4,22 @@ import java.util.Objects;
 
 public class Student {
     private String name;
-    private int account;
-    private int password;
+    private String account;
+    private String password;
     private List<TestPaper> testPaper = new ArrayList<TestPaper>();
+
+    public Student(){
+
+    }
+    public Student(String account,String password){
+        this.account = account;
+        this.password = password;
+    }
+    public Student(String account,String name,String password){
+        this.account = account;
+        this.name = name;
+        this.password = password;
+    }
 
     public String getName() {
         return name;
@@ -16,19 +29,19 @@ public class Student {
         this.name = name;
     }
 
-    public int getAccount() {
+    public String getAccount() {
         return account;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setAccount(int account) {
+    public void setAccount(String account) {
         this.account = account;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
