@@ -21,7 +21,6 @@ public class Test {
         String userPathName = user.getAccount()+".txt";
         List<TestPaper> userTestPapers = readUserTestPapers(userPathName);
         */
-
         for(Student s:studentsList()){
             System.out.println(s.getAccount());
             System.out.println(s.getPassword());
@@ -40,11 +39,10 @@ public class Test {
         String[] s = stu.split(";");
         for(String s1:s){
             String[] s2 = s1.split(" ");
-            Student student = new Student();
-            student.setAccount(s2[0].trim());
-            student.setPassword(s2[2].trim());
+            Student student = new Student(s2[0].trim(),s2[2].trim());
             students.add(student);
         }
+
         return students;
     }
 
@@ -56,31 +54,24 @@ public class Test {
             String sNumber = scan.next();
             System.out.println("请输入你的密码");
             String sPassword = scan.next();
-            user.setAccount(sNumber);
-            user.setPassword(sPassword);
-            if(!Test.studentsList().contains(user)){
+            Student s = new Student(sNumber,sPassword);
+            if(!Test.studentsList().contains(s)){
                 System.out.println("用户名不存在");
                 continue;
             }
-            for (Student s : Test.studentsList()) {
-                if (s.getAccount().contains(user.getAccount())){
-                    System.out.println("这是正确的用户名");
-                    System.out.println(s.getAccount());
-                    if (!s.getPassword().equals(user.getPassword())){
-                        System.out.println("错误的密码");
-                        continue;
-                    }else {
-                        System.out.println("登录成功 ");
-                    }
+            for (Student s0 : Test.studentsList()){
+                if(s0.equals(s)){
+                    user = s0;
                 }
-                else {
-                    continue;
-                }
-
             }
-            return user;
+            if(!user.getPassword().equals(s.getPassword())){
+                System.out.println("密码错误");
+                continue;
+            }
+            System.out.println("登录成功");
+            break;
         }
-
+        return user;
     }
 
     public static List<TestPaper> readUserTestPapers(String userPathName){

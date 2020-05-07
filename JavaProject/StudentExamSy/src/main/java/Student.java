@@ -12,10 +12,12 @@ public class Student {
 
     }
     public Student(String account,String password){
+        super();
         this.account = account;
         this.password = password;
     }
     public Student(String account,String name,String password){
+        super();
         this.account = account;
         this.name = name;
         this.password = password;
@@ -56,12 +58,17 @@ public class Student {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Student student = (Student) o;
-        return account == student.account &&
-                password == student.password &&
-                Objects.equals(name, student.name) &&
-                Objects.equals(testPaper, student.testPaper);
+        if(account == null){
+            if(student.account !=null){
+                return false;
+            }
+        }else if(!account.equals(student.account)){
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -72,6 +79,7 @@ public class Student {
     public void setTestPaper(List<TestPaper> testPaper) {
         this.testPaper = testPaper;
     }
+
 
     @Override
     public String toString() {
