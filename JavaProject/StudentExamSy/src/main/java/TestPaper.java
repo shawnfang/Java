@@ -9,7 +9,15 @@ public class TestPaper {
     private int score;
     private List<ExamQuestion> examQuestions = new ArrayList<ExamQuestion>();
 
-    public static List<ExamQuestion> getTestPaper(String pathName) throws IOException {
+    public TestPaper(String tName,List<ExamQuestion> examQuestion){
+        this.TestPaperName = tName;
+        this.examQuestions = examQuestion;
+    }
+
+    public static TestPaper getTestPaper(String pathName) throws IOException {
+        System.out.println(pathName);
+        String[] PaperName = pathName.split("\\.");
+
         List<ExamQuestion> examQuestions = new ArrayList<ExamQuestion>();
         URL url = TestPaper.class.getClassLoader().getResource(pathName);
         File f = new File(url.getFile());
@@ -28,7 +36,8 @@ public class TestPaper {
             examQuestion.setAnswer(selectList[1].trim());
             examQuestions.add(examQuestion);
         }
-        return examQuestions;
+        TestPaper testPaper = new TestPaper(PaperName[0],examQuestions);
+        return testPaper;
     }
 
     @Override
@@ -36,9 +45,8 @@ public class TestPaper {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TestPaper testPaper = (TestPaper) o;
-        return score == testPaper.score &&
-                Objects.equals(TestPaperName, testPaper.TestPaperName) &&
-                Objects.equals(examQuestions, testPaper.examQuestions);
+        if(!TestPaperName.equals(testPaper.TestPaperName))return false;
+        return true;
     }
 
     @Override

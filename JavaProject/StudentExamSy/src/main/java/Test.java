@@ -9,20 +9,41 @@ public class Test {
     private static String stuList = "student.txt";
     public static void main(String[] args) throws IOException {
         /*
-
-        String Driving1 = "Driving1.txt";
-        String Driving2 = "Driving2.txt";
-        teacher.addTestPaper(TestPaper.getTestPaper(Corejava));
-        teacher.addTestPaper(TestPaper.getTestPaper(Driving1));
-        teacher.addTestPaper(TestPaper.getTestPaper(Driving2));
         List<Student> students = Student.getStudents("student.txt");
         teacher.setStudents(students);
         Student user = login();
         String userPathName = user.getAccount()+".txt";
         List<TestPaper> userTestPapers = readUserTestPapers(userPathName);
         */
-        String Corejava = "Driving1.txt";
-        System.out.println(TestPaper.getTestPaper(Corejava));
+        String Driving1 = "Driving1.txt";
+        String Driving2 = "Driving2.txt";
+        String Corejava = "Corejava.txt";
+        teacher.addTestPaper(TestPaper.getTestPaper(Corejava));
+        teacher.addTestPaper(TestPaper.getTestPaper(Driving1));
+        teacher.addTestPaper(TestPaper.getTestPaper(Driving2));
+        Student student = login();
+        String stuFilePath = student.getAccount()+".txt";
+        while (true){
+            boolean isExit = false;
+            System.out.println("请输入你要操作的选项，1：查询；2：考试；3：退出");
+            Scanner scanner = new Scanner(System.in);
+            String choice = scanner.nextLine();
+            switch (choice){
+                case "1":
+
+                    break;
+                case "2":
+                    break;
+                case "3":
+                    isExit = true;
+                    System.out.println("退出");
+                    break;
+            }
+            if(isExit){
+                break;
+            }
+
+        }
     }
 
     public static List<Student> studentsList() throws IOException {
