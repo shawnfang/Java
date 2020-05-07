@@ -21,9 +21,44 @@ public class Constructclass extends Heroclass {
         name = Cname;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getArmor() {
+        return armor;
+    }
+
+    public float getHp() {
+        return hp;
+    }
+
+    public void setArmor(float armor) {
+        this.armor = armor;
+    }
+
+    public void setHp(float hp) {
+        this.hp = hp;
+    }
+
+    @Override
+    public String toString() {
+        return "Constructclass{" +
+                "hp=" + hp +
+                ", armor=" + armor +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     public static void main(String[] args){
         // 实例化对象的时候必然会调用构造方法
         Constructclass C = new Constructclass("超级英雄");
-        System.out.println(C.name);
+        Constructclass cc = new Constructclass("ab",10);
+        System.out.println(C);
+        System.out.println(cc);
     }
 }
