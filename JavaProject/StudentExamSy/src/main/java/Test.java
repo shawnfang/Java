@@ -9,7 +9,7 @@ public class Test {
     private static String stuList = "student.txt";
     public static void main(String[] args) throws IOException {
         /*
-        String Corejava = "Corejava.txt";
+
         String Driving1 = "Driving1.txt";
         String Driving2 = "Driving2.txt";
         teacher.addTestPaper(TestPaper.getTestPaper(Corejava));
@@ -21,11 +21,8 @@ public class Test {
         String userPathName = user.getAccount()+".txt";
         List<TestPaper> userTestPapers = readUserTestPapers(userPathName);
         */
-        for(Student s:studentsList()){
-            System.out.println(s.getAccount());
-            System.out.println(s.getPassword());
-        }
-        login();
+        String Corejava = "Driving1.txt";
+        System.out.println(TestPaper.getTestPaper(Corejava));
     }
 
     public static List<Student> studentsList() throws IOException {

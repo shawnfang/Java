@@ -2,8 +2,9 @@ import java.util.Objects;
 
 public class ExamQuestion {
     private String question;
-    private String answer;
     private String select;
+    private String answer;
+
 
     public void setAnswer(String answer) {
         this.answer = answer;
@@ -33,8 +34,8 @@ public class ExamQuestion {
     public String toString() {
         return "ExamQuestion{" +
                 "question='" + question + '\'' +
-                ", answer='" + answer + '\'' +
                 ", select='" + select + '\'' +
+                ", answer='" + answer + '\'' +
                 '}';
     }
 

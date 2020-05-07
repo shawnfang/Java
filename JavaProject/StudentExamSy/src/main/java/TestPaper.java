@@ -9,16 +9,26 @@ public class TestPaper {
     private int score;
     private List<ExamQuestion> examQuestions = new ArrayList<ExamQuestion>();
 
-    public static TestPaper getTestPaper(String pathName) throws IOException {
+    public static List<ExamQuestion> getTestPaper(String pathName) throws IOException {
+        List<ExamQuestion> examQuestions = new ArrayList<ExamQuestion>();
         URL url = TestPaper.class.getClassLoader().getResource(pathName);
         File f = new File(url.getFile());
         FileReader fs = new FileReader(f);
         char[] all = new char[(int)f.length()];
         fs.read(all);
-        for (char b:all){
-            System.out.println(b);
+        String TestPaper = new String(all);
+        String[] s = TestPaper.split("@");
+        for(String s1:s){
+            ExamQuestion examQuestion = new ExamQuestion();
+            String[] question = s1.split(":");
+            String selectString = question[1];
+            String[] selectList = selectString.split("answer=");
+            examQuestion.setQuestion(question[0]);
+            examQuestion.setSelect(selectList[0]);
+            examQuestion.setAnswer(selectList[1].trim());
+            examQuestions.add(examQuestion);
         }
-        return null;
+        return examQuestions;
     }
 
     @Override
