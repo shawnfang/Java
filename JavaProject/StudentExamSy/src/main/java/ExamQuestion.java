@@ -4,7 +4,15 @@ public class ExamQuestion {
     private String question;
     private String select;
     private String answer;
+    private String stuAnswer;
 
+    public String getStuAnswer() {
+        return stuAnswer;
+    }
+
+    public void setStuAnswer(String stuAnswer) {
+        this.stuAnswer = stuAnswer;
+    }
 
     public void setAnswer(String answer) {
         this.answer = answer;
@@ -28,6 +36,10 @@ public class ExamQuestion {
 
     public void setSelect(String select) {
         this.select = select;
+    }
+
+    public boolean isAnswerTrue(){
+        return answer == stuAnswer;
     }
 
     @Override

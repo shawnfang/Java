@@ -9,15 +9,33 @@ public class TestPaper {
     private int score;
     private List<ExamQuestion> examQuestions = new ArrayList<ExamQuestion>();
 
+    public TestPaper(){
+
+    }
+
+    public TestPaper(String testPaperName){
+        super();
+        this.TestPaperName = testPaperName;
+    }
+
+    public TestPaper(String TestPaperName,int score){
+        this.TestPaperName = TestPaperName;
+        this.score = score;
+    }
+
     public TestPaper(String tName,List<ExamQuestion> examQuestion){
         this.TestPaperName = tName;
         this.examQuestions = examQuestion;
     }
 
+    public int calTestPaper(int number){
+        score = number*10;
+        return score;
+    }
+
     public static TestPaper getTestPaper(String pathName) throws IOException {
         System.out.println(pathName);
         String[] PaperName = pathName.split("\\.");
-
         List<ExamQuestion> examQuestions = new ArrayList<ExamQuestion>();
         URL url = TestPaper.class.getClassLoader().getResource(pathName);
         File f = new File(url.getFile());
@@ -42,10 +60,16 @@ public class TestPaper {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         TestPaper testPaper = (TestPaper) o;
-        if(!TestPaperName.equals(testPaper.TestPaperName))return false;
+        if(!TestPaperName.equals(testPaper.TestPaperName)) {
+            return false;
+        }
         return true;
     }
 

@@ -1,8 +1,6 @@
 import java.io.*;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Test {
     private static Teacher teacher = new Teacher();
@@ -22,7 +20,8 @@ public class Test {
         teacher.addTestPaper(TestPaper.getTestPaper(Driving1));
         teacher.addTestPaper(TestPaper.getTestPaper(Driving2));
         Student student = login();
-        String stuFilePath = student.getAccount()+".txt";
+        String stuInfoFilePath = student.getAccount()+".txt";
+        System.out.println(Test.readStuInfoFile(stuInfoFilePath));
         while (true){
             boolean isExit = false;
             System.out.println("请输入你要操作的选项，1：查询；2：考试；3：退出");
@@ -60,7 +59,6 @@ public class Test {
             Student student = new Student(s2[0].trim(),s2[2].trim());
             students.add(student);
         }
-
         return students;
     }
 
@@ -92,8 +90,37 @@ public class Test {
         return user;
     }
 
-    public static List<TestPaper> readUserTestPapers(String userPathName){
-        List<TestPaper> userTestPaper = new ArrayList<>();
-        return userTestPaper;
+    public static ArrayList readStuInfoFile(String stuInfoFielPath) throws IOException {
+        ArrayList c = new ArrayList();
+        ArrayList<String> Temp = new ArrayList();
+        Set<String> etemp = new HashSet<>();
+        URL url = TestPaper.class.getClassLoader().getResource(stuInfoFielPath);
+        File f = new File(url.getFile());
+        FileReader fs = new FileReader(f);
+        BufferedReader in = new BufferedReader(fs);
+        String line;
+        int index = 0;
+        while ((line = in.readLine())!= null){
+            System.out.println(line);
+            String title = line.split("#")[0];
+            System.out.println(title);
+            String answer = line.split("#")[1];
+            TestPaper stuTestPaper = new TestPaper(title,0);
+            if(!teacher.getTestPapers().contains(stuTestPaper)){
+                System.out.println("没有这门课程");
+                continue;
+            }
+            for (TestPaper t:teacher.getTestPapers()) {
+                if (t.getTestPaperName().equals(title)) {
+                    stuTestPaper = t;
+                }
+            }
+            for (ExamQuestion e : stuTestPaper.getExamQuestions()) {
+                System.out.println(e);
+                e.setStuAnswer(String.valueOf(answer.charAt(index++)));
+            }
+            System.out.println(stuTestPaper);
+        }
+        return c;
     }
 }
