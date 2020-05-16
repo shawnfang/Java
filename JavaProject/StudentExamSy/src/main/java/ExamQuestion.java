@@ -4,7 +4,7 @@ public class ExamQuestion {
     private String question;
     private String select;
     private String answer;
-    private String stuAnswer;
+    private String stuAnswer=null;
 
     public String getStuAnswer() {
         return stuAnswer;

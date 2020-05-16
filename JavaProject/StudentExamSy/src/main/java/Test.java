@@ -99,12 +99,13 @@ public class Test {
         FileReader fs = new FileReader(f);
         BufferedReader in = new BufferedReader(fs);
         String line;
-        int index = 0;
+        int number = 0;
         while ((line = in.readLine())!= null){
             System.out.println(line);
             String title = line.split("#")[0];
             System.out.println(title);
             String answer = line.split("#")[1];
+            char[] a = answer.toCharArray();
             TestPaper stuTestPaper = new TestPaper(title,0);
             if(!teacher.getTestPapers().contains(stuTestPaper)){
                 System.out.println("没有这门课程");
@@ -115,11 +116,20 @@ public class Test {
                     stuTestPaper = t;
                 }
             }
-            for (ExamQuestion e : stuTestPaper.getExamQuestions()) {
-                System.out.println(e);
-                e.setStuAnswer(String.valueOf(answer.charAt(index++)));
+            for(int i=0;i<stuTestPaper.getExamQuestions().size();i++) {
+                if (i >= a.length) {
+                    break;
+                } else {
+                    ExamQuestion e = stuTestPaper.getExamQuestions().get(i);
+                    e.setStuAnswer(String.valueOf(answer.charAt(i)));
+                    if (e.getAnswer().equals(e.getStuAnswer())) {
+                        number += 1;
+                    }
+                    continue;
+                }
             }
-            System.out.println(stuTestPaper);
+            stuTestPaper.calTestPaper(number);
+            System.out.println(stuTestPaper.getScore());
         }
         return c;
     }
