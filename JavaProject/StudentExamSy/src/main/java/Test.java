@@ -22,6 +22,8 @@ public class Test {
         Student student = login();
         String stuInfoFilePath = student.getAccount()+".txt";
         System.out.println(Test.readStuInfoFile(stuInfoFilePath));
+        List stuTestPaperList = Test.readStuInfoFile(stuInfoFilePath);
+        System.out.println();
         while (true){
             boolean isExit = false;
             System.out.println("请输入你要操作的选项，1：查询；2：考试；3：退出");
@@ -29,7 +31,7 @@ public class Test {
             String choice = scanner.nextLine();
             switch (choice){
                 case "1":
-
+                    Test.getStudentTestPaperScore(stuTestPaperList);
                     break;
                 case "2":
                     break;
@@ -90,9 +92,9 @@ public class Test {
         return user;
     }
 
-    public static ArrayList readStuInfoFile(String stuInfoFielPath) throws IOException {
+    public static List readStuInfoFile(String stuInfoFielPath) throws IOException {
         ArrayList c = new ArrayList();
-        ArrayList<String> Temp = new ArrayList();
+        List stuTestPaperTemp = new ArrayList();
         Set<String> etemp = new HashSet<>();
         URL url = TestPaper.class.getClassLoader().getResource(stuInfoFielPath);
         File f = new File(url.getFile());
@@ -100,37 +102,66 @@ public class Test {
         BufferedReader in = new BufferedReader(fs);
         String line;
         int number = 0;
-        while ((line = in.readLine())!= null){
-            System.out.println(line);
-            String title = line.split("#")[0];
-            System.out.println(title);
-            String answer = line.split("#")[1];
-            char[] a = answer.toCharArray();
-            TestPaper stuTestPaper = new TestPaper(title,0);
+        while ((line = in.readLine()) != null) {
+            stuTestPaperTemp.add(line);
+        }
+        return stuTestPaperTemp;
+    }
+
+    public static void getStudentTestPaperScore(List TestPaperList){
+        int number = 0;
+        HashMap s = new HashMap();
+        ArrayList cname = new ArrayList();
+        ArrayList sTestAnswer = new ArrayList();
+        for(int i=0;i<TestPaperList.size();i++){
+            //String stuInfo = TestPaperList.get(i);
+            System.out.println("分割线");
+            System.out.println(TestPaperList.get(i));
+            cname.add(TestPaperList.get(i).toString().split("#")[0]);
+            sTestAnswer.add(TestPaperList.get(i).toString().split("#")[1]);
+        }
+        System.out.println(cname);
+
+        while (true) {
+            System.out.println("请输入要查询的科目成绩");
+            Scanner scan = new Scanner(System.in);
+            String command = scan.next();
+            if (command.equals("q")) {
+                break;
+            }
+            if(!cname.contains(command)){
+                System.out.println("该学生没有这门课的考试成绩");
+                continue;
+            }
+            TestPaper stuTestPaper = new TestPaper(command);
             if(!teacher.getTestPapers().contains(stuTestPaper)){
-                System.out.println("没有这门课程");
+                System.out.println("老师没有这门课程");
                 continue;
             }
             for (TestPaper t:teacher.getTestPapers()) {
-                if (t.getTestPaperName().equals(title)) {
+                if (t.getTestPaperName().equals(command)) {
                     stuTestPaper = t;
                 }
             }
-            for(int i=0;i<stuTestPaper.getExamQuestions().size();i++) {
-                if (i >= a.length) {
-                    break;
-                } else {
-                    ExamQuestion e = stuTestPaper.getExamQuestions().get(i);
-                    e.setStuAnswer(String.valueOf(answer.charAt(i)));
-                    if (e.getAnswer().equals(e.getStuAnswer())) {
-                        number += 1;
+            for(int n=0;n<cname.size();n++) {
+                if(command.equals(cname.get(n))){
+                    char[] a = sTestAnswer.get(n).toString().toCharArray();
+                    for (int i = 0; i < stuTestPaper.getExamQuestions().size(); i++) {
+                        if (i >= a.length) {
+                            break;
+                        } else {
+                            ExamQuestion e = stuTestPaper.getExamQuestions().get(i);
+                            e.setStuAnswer(String.valueOf(sTestAnswer.get(n).toString().charAt(i)));
+                            if (e.getAnswer().equals(e.getStuAnswer())) {
+                                number += 1;
+                            }
+                            continue;
+                        }
                     }
-                    continue;
                 }
+                stuTestPaper.calTestPaper(number);
             }
-            stuTestPaper.calTestPaper(number);
             System.out.println(stuTestPaper.getScore());
         }
-        return c;
     }
 }
