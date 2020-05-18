@@ -22,6 +22,21 @@ public class Teacher {
         return testPapers;
     }
 
+    public TestPaper stuGetTestPaper(String testpapername){
+        TestPaper tp = new TestPaper();
+        for(TestPaper t:getTestPapers()){
+            if(t.getTestPaperName().equals(testpapername)) {
+                tp = t;
+            }
+        }
+        return tp;
+    }
+
+
+    public boolean isExist(TestPaper testPaper){
+        return getTestPapers().contains(testPaper);
+    }
+
     public void setStudents(List<Student> students) {
         this.students = students;
     }

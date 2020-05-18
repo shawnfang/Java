@@ -6,13 +6,6 @@ public class Test {
     private static Teacher teacher = new Teacher();
     private static String stuList = "student.txt";
     public static void main(String[] args) throws IOException {
-        /*
-        List<Student> students = Student.getStudents("student.txt");
-        teacher.setStudents(students);
-        Student user = login();
-        String userPathName = user.getAccount()+".txt";
-        List<TestPaper> userTestPapers = readUserTestPapers(userPathName);
-        */
         String Driving1 = "Driving1.txt";
         String Driving2 = "Driving2.txt";
         String Corejava = "Corejava.txt";
@@ -21,19 +14,18 @@ public class Test {
         teacher.addTestPaper(TestPaper.getTestPaper(Driving2));
         Student student = login();
         String stuInfoFilePath = student.getAccount()+".txt";
-        System.out.println(Test.readStuInfoFile(stuInfoFilePath));
-        List stuTestPaperList = Test.readStuInfoFile(stuInfoFilePath);
-        System.out.println();
         while (true){
+            //List stuTestPaperList = Test.readStuInfoFile(stuInfoFilePath);
             boolean isExit = false;
             System.out.println("请输入你要操作的选项，1：查询；2：考试；3：退出");
             Scanner scanner = new Scanner(System.in);
             String choice = scanner.nextLine();
             switch (choice){
                 case "1":
-                    Test.getStudentTestPaperScore(stuTestPaperList);
+                    Test.getStudentTestPaperScore(Test.readStuInfoFile(stuInfoFilePath));
                     break;
                 case "2":
+                    Test.getTest(student,Test.readStuInfoFile(stuInfoFilePath));
                     break;
                 case "3":
                     isExit = true;
@@ -45,6 +37,65 @@ public class Test {
             }
 
         }
+    }
+    public  static void getTest(Student student,List stuTestPaperList) throws IOException {
+        String stuinfo = student.getAccount()+".txt";
+        StringBuffer buf=new StringBuffer();
+        ArrayList name = new ArrayList();
+        if(stuTestPaperList.size()!=0){
+            for(int i=0;i<stuTestPaperList.size();i++){
+                name.add(stuTestPaperList.get(i).toString().split("#")[0]);
+            }
+        }
+        while (true){
+            System.out.println("请输入你要考试的科目");
+            Scanner scan = new Scanner(System.in);
+            String sName = scan.next();
+            if(name.contains(sName) ){
+                System.out.println("已经完成该科目的考试");
+                break;
+            }
+            if(sName.equals("q")){
+                break;
+            }
+            TestPaper stuTestPaper = new TestPaper(sName);
+            if(!teacher.isExist(stuTestPaper)){
+                System.out.println("老师没有这门课程");
+                continue;
+            }
+            stuTestPaper = teacher.stuGetTestPaper(sName);
+            System.out.println(stuTestPaper);
+            buf.append(sName);
+            buf.append("#");
+            System.out.println(buf);
+            while (true){
+                System.out.println("请输入你的答案");
+                for(ExamQuestion e:stuTestPaper.getExamQuestions()){
+                    System.out.println(e.getQuestion());
+                    System.out.println(e.getSelect());
+                    Scanner scan1 = new Scanner(System.in);
+                    String answer = scan1.next();
+                    if(answer.equals("q")){
+                        break;
+                    }
+                    buf.append(answer);
+                }
+                System.out.println("考试结束");
+                System.out.println(buf);
+                stuTestPaperList.add(buf);
+                break;
+            }
+            System.out.println(stuinfo);
+            FileWriter fw = new FileWriter("src/main/resources/"+stuinfo);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for(Object s:stuTestPaperList){
+                bw.write(s.toString()+"\t\n");
+            }
+            bw.close();
+            fw.close();
+            break;
+        }
+
     }
 
     public static List<Student> studentsList() throws IOException {
@@ -97,7 +148,13 @@ public class Test {
         List stuTestPaperTemp = new ArrayList();
         Set<String> etemp = new HashSet<>();
         URL url = TestPaper.class.getClassLoader().getResource(stuInfoFielPath);
-        File f = new File(url.getFile());
+        File f=null;
+        if(url==null){
+            f = new File("src/main/resources/"+stuInfoFielPath);
+            f.createNewFile();
+        }else {
+            f = new File(url.getFile());
+        }
         FileReader fs = new FileReader(f);
         BufferedReader in = new BufferedReader(fs);
         String line;
@@ -105,6 +162,8 @@ public class Test {
         while ((line = in.readLine()) != null) {
             stuTestPaperTemp.add(line);
         }
+        fs.close();
+        in.close();
         return stuTestPaperTemp;
     }
 
@@ -113,6 +172,9 @@ public class Test {
         HashMap s = new HashMap();
         ArrayList cname = new ArrayList();
         ArrayList sTestAnswer = new ArrayList();
+        if(TestPaperList.size()==0){
+            System.out.println("该考生还没有进行任何考试");
+        }
         for(int i=0;i<TestPaperList.size();i++){
             //String stuInfo = TestPaperList.get(i);
             System.out.println("分割线");
