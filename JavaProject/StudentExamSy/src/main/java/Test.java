@@ -100,8 +100,9 @@ public class Test {
 
     public static List<Student> studentsList() throws IOException {
         List<Student> students = new ArrayList<>();
-        URL stuUrl = TestPaper.class.getClassLoader().getResource(stuList);
-        File f = new File(stuUrl.getFile());
+        //URL stuUrl = TestPaper.class.getClassLoader().getResource(stuList);
+        String stuUrl = "src/main/resources/"+stuList;
+        File f = new File(stuUrl);
         FileReader fs = new FileReader(f);
         char[] all = new char[(int)f.length()];
         fs.read(all);
@@ -147,13 +148,11 @@ public class Test {
         ArrayList c = new ArrayList();
         List stuTestPaperTemp = new ArrayList();
         Set<String> etemp = new HashSet<>();
-        URL url = TestPaper.class.getClassLoader().getResource(stuInfoFielPath);
-        File f=null;
-        if(url==null){
-            f = new File("src/main/resources/"+stuInfoFielPath);
+        String url = "src/main/resources/"+stuInfoFielPath;
+        System.out.println(url);
+        File f = new File(url);
+        if(!f.exists()){
             f.createNewFile();
-        }else {
-            f = new File(url.getFile());
         }
         FileReader fs = new FileReader(f);
         BufferedReader in = new BufferedReader(fs);
@@ -185,7 +184,7 @@ public class Test {
         System.out.println(cname);
 
         while (true) {
-            System.out.println("请输入要查询的科目成绩");
+            System.out.println("请输入要查询的科目成绩,输入q是退出查询");
             Scanner scan = new Scanner(System.in);
             String command = scan.next();
             if (command.equals("q")) {
