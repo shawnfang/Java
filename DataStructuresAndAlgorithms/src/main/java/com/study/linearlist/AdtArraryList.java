@@ -6,11 +6,13 @@ public class AdtArraryList<T> implements  AdtList<T> {
     private int length;
     private static final int Max_Size = 50;
 
+    /*
     private void makeRoom(int newPosition){
         for (int index=length;index>=newPosition;index--){
             entry[index] = entry[index--];
         }
     }
+    */
 
     public AdtArraryList(){
         this(Max_Size);
@@ -33,16 +35,22 @@ public class AdtArraryList<T> implements  AdtList<T> {
     }
 
     public boolean add(int newPosition, T newEntry) {
-        boolean isSuccessfully = true;
-        if(!isFull() && (newPosition>=1) && (newPosition<=length+1)){
-            for (int i=length;i>=newPosition;i--){
-                entry[i] = entry[i--];
-            }
-            entry[newPosition-1]=newEntry;
-            length++;
-        }else {
-            isSuccessfully = false;
+        boolean isSuccessfully = false;
+        if(isFull()){
+            return isSuccessfully;
         }
+        if(newPosition>length+1){
+            return isSuccessfully;
+        }
+        if(newPosition < 1){
+            return isSuccessfully;
+        }
+        for (int i=length;i>=newPosition;i--){
+            entry[i] = entry[i--];
+        }
+        entry[newPosition-1]=newEntry;
+        length++;
+        isSuccessfully = true;
         return isSuccessfully;
     }
 
@@ -79,6 +87,17 @@ public class AdtArraryList<T> implements  AdtList<T> {
     }
 
     public void display() {
+        for (int i = 0; i <= length; i++) {
+            System.out.println(entry[i]);
+        }
+    }
 
+    public static void main(String[] args) {
+        AdtArraryList<Integer> i = new AdtArraryList<Integer>();
+        System.out.println(i.length);
+
+        i.add(1);
+        i.add(2);
+        i.display();
     }
 }
