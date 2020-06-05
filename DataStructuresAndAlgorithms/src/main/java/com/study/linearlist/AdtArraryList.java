@@ -20,7 +20,7 @@ public class AdtArraryList<T> implements  AdtList<T> {
 
     public AdtArraryList(int max_size) {
         length = 0;
-        T[] list = (T[]) new Object[max_size];
+        entry = (T[]) new Object[max_size];
     }
 
     public boolean add(T newEntry) {
@@ -46,7 +46,7 @@ public class AdtArraryList<T> implements  AdtList<T> {
             return isSuccessfully;
         }
         for (int i=length;i>=newPosition;i--){
-            entry[i] = entry[i--];
+            entry[i] = entry[i-1];
         }
         entry[newPosition-1]=newEntry;
         length++;
@@ -55,7 +55,21 @@ public class AdtArraryList<T> implements  AdtList<T> {
     }
 
     public T remove(int givePosition) {
-        return null;
+        T result = null;
+        if(givePosition<0 | givePosition>length){
+            System.out.println("非法的删除");
+            return null;
+        }
+        if(isEmpty()){
+            System.out.println("空表");
+            return null;
+        }
+        result = entry[givePosition-1];
+        for(int i=givePosition-1;i<length;i++){
+            entry[i] = entry[i+1];
+        }
+        length--;
+        return result;
     }
 
     public void clean() {
@@ -93,11 +107,19 @@ public class AdtArraryList<T> implements  AdtList<T> {
     }
 
     public static void main(String[] args) {
-        AdtArraryList<Integer> i = new AdtArraryList<Integer>();
-        System.out.println(i.length);
+        AdtArraryList<String> i = new AdtArraryList<String>();
 
-        i.add(1);
-        i.add(2);
+        System.out.println(i.Max_Size);
+        i.add("a");
+        i.add("b");
+        i.add("c");
+        i.add("d");
+        i.add("e");
+        i.add("f");
+        System.out.println(i.length);
+        i.add(1,"s");
+        i.display();
+        System.out.println("这是要删除的对象："+i.remove(2));
         i.display();
     }
 }
