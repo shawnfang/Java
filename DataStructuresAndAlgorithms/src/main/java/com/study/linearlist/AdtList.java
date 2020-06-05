@@ -8,7 +8,7 @@ public interface AdtList<T> {
     public boolean replace(int givenPosition,T newEntry);
     public Object getEntry(int givenPosition);
     public boolean contains(T anEntry);
-    public int getLength();
+    public int getSize();
     public boolean isEmpty();
     public boolean isFull();
     public void display();

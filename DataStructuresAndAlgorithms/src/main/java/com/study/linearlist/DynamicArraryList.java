@@ -1,24 +1,66 @@
 package com.study.linearlist;
 
-public class AdtArraryList<T> implements  AdtList<T> {
+public class DynamicArraryList<T> implements AdtList<T>{
 
     private T[] entry;
     private int length;
-    private static final int Max_Size = 50;
+    private static final int Max_Size = 2;
 
-    public AdtArraryList(){
+    public DynamicArraryList(){
         this(Max_Size);
     }
 
-    public AdtArraryList(int max_size) {
+    public DynamicArraryList(int max_size) {
         length = 0;
         entry = (T[]) new Object[max_size];
+    }
+
+    private void doubleArrary(){
+        T[] oldArrary = entry;
+        int oldLength = oldArrary.length;
+        entry =(T[]) new Object[oldLength*2];
+        for (int i = 0; i < oldLength; i++) {
+            entry[i]=oldArrary[i];
+        }
+        System.out.println("扩展数组完成的长度："+entry.length);
+    }
+
+    public boolean add(T newEntry) {
+        boolean isSuccessfully = true;
+        if(isFull()){
+            doubleArrary();
+            System.out.println("满了，继续扩展数组");
+        }
+        entry[length] = newEntry;
+        length++;
+        return isSuccessfully;
+    }
+
+    public boolean add(int newPosition, T newEntry) {
+        boolean isSuccessfully = false;
+        if(isFull()){
+            System.out.println("插入操作，数组满了继续扩展数组");
+            doubleArrary();
+        }
+        if(newPosition>length+1){
+            return isSuccessfully;
+        }
+        if(newPosition < 1){
+            return isSuccessfully;
+        }
+        for (int i=length;i>=newPosition;i--){
+            entry[i] = entry[i-1];
+        }
+        entry[newPosition-1]=newEntry;
+        length++;
+        isSuccessfully = true;
+        return isSuccessfully;
     }
 
     public boolean replace(int givenPosition, T newEntry) {
         boolean isSuccessfully = true;
         if (givenPosition < 0 && givenPosition> length) {
-            isSuccessfully = false;
+            doubleArrary();
         }else {
             entry[givenPosition-1] = newEntry;
         }
@@ -49,36 +91,6 @@ public class AdtArraryList<T> implements  AdtList<T> {
         return isSuccessfully;
     }
 
-    public boolean add(T newEntry) {
-        boolean isSuccessfully = true;
-        if(!isFull()){
-            entry[length] = newEntry;
-            length++;
-        }else {
-            isSuccessfully = false;
-        }
-        return isSuccessfully;
-    }
-
-    public boolean add(int newPosition, T newEntry) {
-        boolean isSuccessfully = false;
-        if(isFull()){
-            return isSuccessfully;
-        }
-        if(newPosition>length+1){
-            return isSuccessfully;
-        }
-        if(newPosition < 1){
-            return isSuccessfully;
-        }
-        for (int i=length;i>=newPosition;i--){
-            entry[i] = entry[i-1];
-        }
-        entry[newPosition-1]=newEntry;
-        length++;
-        isSuccessfully = true;
-        return isSuccessfully;
-    }
 
     public T remove(int givePosition) {
         T result = null;
@@ -122,7 +134,7 @@ public class AdtArraryList<T> implements  AdtList<T> {
     }
 
     public static void main(String[] args) {
-        AdtArraryList<String> i = new AdtArraryList<String>();
+        DynamicArraryList<String> i = new DynamicArraryList<String>();
         System.out.println(i.Max_Size);
         i.add("a");
         i.add("b");
@@ -130,19 +142,14 @@ public class AdtArraryList<T> implements  AdtList<T> {
         i.add("d");
         i.add("e");
         i.add("f");
-        System.out.println("是否包含某个元素："+ i.contains("cs"));
+        i.add("gg");
+        i.add("h");
+        i.add(1,"ss");
+        i.add(5,"mm");
+        i.add(3,"kk");
+        i.display();
         System.out.println(i.length);
-        i.add(1,"s");
-        i.display();
-        System.out.println("这是要删除的对象："+i.remove(6));
-        i.display();
-        System.out.println("这是列表的长度："+i.getSize());
-        System.out.println("是否为空："+i.isEmpty());
-        System.out.println("是否已经满了："+i.isFull());
-        i.replace(6,"abc");
-        i.display();
-        System.out.println("获取列表中某个位置的元素："+i.getEntry(4));
-        i.clean();
-        System.out.println("是否已经清空："+i.isEmpty());
+
+
     }
 }
