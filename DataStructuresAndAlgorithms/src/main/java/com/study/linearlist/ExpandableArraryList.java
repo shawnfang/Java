@@ -1,16 +1,20 @@
 package com.study.linearlist;
-
-public class DynamicArraryList<T> implements AdtList<T>{
+/*
+数据结构与算法分析 java语言描述
+第五章课后项目设计练习 第1题，完成ExpandableArraryList类的实现
+主要实现特性：使用动态扩展数组实现ADT线性表
+ */
+public class ExpandableArraryList<T> implements AdtList<T>{
 
     private T[] entry;
     private int length;
     private static final int Max_Size = 2;
 
-    public DynamicArraryList(){
+    public ExpandableArraryList(){
         this(Max_Size);
     }
 
-    public DynamicArraryList(int max_size) {
+    public ExpandableArraryList(int max_size) {
         length = 0;
         entry = (T[]) new Object[max_size];
     }
@@ -134,7 +138,7 @@ public class DynamicArraryList<T> implements AdtList<T>{
     }
 
     public static void main(String[] args) {
-        DynamicArraryList<String> i = new DynamicArraryList<String>();
+        ExpandableArraryList<String> i = new ExpandableArraryList<String>();
         System.out.println(i.Max_Size);
         i.add("a");
         i.add("b");

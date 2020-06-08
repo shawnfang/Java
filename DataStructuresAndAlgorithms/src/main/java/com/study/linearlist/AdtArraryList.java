@@ -1,5 +1,9 @@
 package com.study.linearlist;
-
+/*
+数据结构与算法分析 java语言描述
+第五章
+主要实现特性：使用定长数组实现ADT线性表
+ */
 public class AdtArraryList<T> implements  AdtList<T> {
 
     private T[] entry;
