@@ -23,7 +23,7 @@ public class VectorList<T> implements AdtList<T> {
 
     public boolean add(int newPosition, T newEntry) {
         boolean successFully = true;
-        if ((newPosition>=1) && (newPosition<list.size()+1)) {
+        if ((newPosition>=1) && (newPosition<=list.size()+1)) {
             list.insertElementAt(newEntry, newPosition-1);
         }else {
             successFully = false;
@@ -33,7 +33,7 @@ public class VectorList<T> implements AdtList<T> {
 
     public Object remove(int givePosition) {
         T result = null;
-        if ((givePosition>=1) && givePosition<=list.size()) {
+        if ((givePosition>=1) && givePosition<=list.size()+1) {
             if (!list.isEmpty()) {
                 result = list.remove(givePosition-1);
             }else {
@@ -44,12 +44,13 @@ public class VectorList<T> implements AdtList<T> {
     }
 
     public void clean() {
+       list.removeAllElements();
 
     }
 
     public boolean replace(int givenPosition, T newEntry) {
         boolean successFully = true;
-        if((givenPosition>=1)&&(givenPosition<list.size()+1)){
+        if((givenPosition>=1)&&(givenPosition<=list.size()+1)){
             if(!list.isEmpty()) {
                 list.set(givenPosition - 1, newEntry);
             }else {
@@ -64,7 +65,7 @@ public class VectorList<T> implements AdtList<T> {
 
     public Object getEntry(int givenPosition) {
         T result = null;
-        if ((givenPosition>=1) && (givenPosition<=list.size())) {
+        if ((givenPosition>=1) && (givenPosition<=list.size()+1)) {
             if (!list.isEmpty()) {
                 result = list.get(givenPosition-1);
             }else {
@@ -75,7 +76,7 @@ public class VectorList<T> implements AdtList<T> {
     }
 
     public boolean contains(T anEntry) {
-        return false;
+        return list.contains(anEntry);
     }
 
     public int getSize() {
@@ -91,9 +92,11 @@ public class VectorList<T> implements AdtList<T> {
     }
 
     public void display() {
+        StringBuffer stringBuffer = new StringBuffer();
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+            stringBuffer.append(list.get(i)+" ");
         }
+        System.out.println(stringBuffer);
     }
 
     public static void main(String[] args) {
@@ -102,7 +105,8 @@ public class VectorList<T> implements AdtList<T> {
         vectorList.add("b");
         vectorList.add("c");
         vectorList.display();
-        vectorList.add(2,"ff");
+        System.out.println("分割线");
+        System.out.println(vectorList.add(20,"ff"));
         vectorList.display();
     }
 }
