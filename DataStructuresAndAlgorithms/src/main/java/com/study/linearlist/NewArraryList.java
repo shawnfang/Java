@@ -1,5 +1,10 @@
 package com.study.linearlist;
-
+/*
+数据结构与算法分析 java语言描述
+第五章课后项目设计练习 第3题，编写一个类，使用java.util.ArrayList类的一个实例来实现接口。
+将实现的新类与VectorList类进行比较。
+主要实现：使用ArraryList类实现ADT线性表
+ */
 import java.util.ArrayList;
 public class NewArraryList<T> implements AdtList<T> {
 

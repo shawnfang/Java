@@ -4,17 +4,17 @@ package com.study.linearlist;
 第五章
 主要实现特性：使用定长数组实现ADT线性表
  */
-public class AdtArraryList<T> implements  AdtList<T> {
+public class ArraryListAdt<T> implements  AdtList<T> {
 
     private T[] entry;
     private int length;
     private static final int Max_Size = 50;
 
-    public AdtArraryList(){
+    public ArraryListAdt(){
         this(Max_Size);
     }
 
-    public AdtArraryList(int max_size) {
+    public ArraryListAdt(int max_size) {
         length = 0;
         entry = (T[]) new Object[max_size];
     }
@@ -126,7 +126,7 @@ public class AdtArraryList<T> implements  AdtList<T> {
     }
 
     public static void main(String[] args) {
-        AdtArraryList<String> i = new AdtArraryList<String>();
+        ArraryListAdt<String> i = new ArraryListAdt<String>();
         System.out.println(i.Max_Size);
         i.add("a");
         i.add("b");
