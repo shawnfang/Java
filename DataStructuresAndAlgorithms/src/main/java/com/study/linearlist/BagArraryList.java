@@ -1,5 +1,9 @@
 package com.study.linearlist;
-
+/*
+数据结构与算法分析 java语言描述
+第五章课后项目设计练习 第5题
+通过第四章中设计的ADT背包接口实现类，并且新增交集，并集，差集的方法操作
+ */
 public class BagArraryList<T> implements BagAdtList<T> {
 
     private T[] entry;
