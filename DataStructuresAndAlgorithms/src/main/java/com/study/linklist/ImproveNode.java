@@ -1,5 +1,7 @@
 package com.study.linklist;
-
+/*
+Node类与LinkList类分属在一个包内
+ */
 public class ImproveNode<T> {
     private T data;
     private ImproveNode next;
