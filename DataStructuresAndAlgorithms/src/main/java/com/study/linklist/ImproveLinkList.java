@@ -1,52 +1,29 @@
 package com.study.linklist;
-
+/* 第七章 链表实现
+优化点:
+1，使用get/set操作node;
+2, 使用表尾引用，避免重复遍历查询
+ */
 import com.study.linearlist.AdtList;
 
-public class LinkList<T> implements AdtList<T> {
+public class ImproveLinkList<T> implements AdtList<T> {
 
-    private class Node<T> {
-        private T data;
-        private Node next;
-
-        private Node(T dataPortion){
-            data = dataPortion;
-            next = null;
-        }
-        private Node(T dataPortion, Node nextNode){
-            data = dataPortion;
-            next = nextNode;
-        }
-
-        public Node getNext() {
-            return next;
-        }
-
-        public T getData() {
-            return data;
-        }
-
-        public void setData(T data) {
-            this.data = data;
-        }
-
-        public void setNext(Node next) {
-            this.next = next;
-        }
-    }
-
-    private Node firstNode;
+    private ImproveNode firstNode;
     private int length;
+    // 表尾引用
+    private ImproveNode tempLastNode;
 
-    public LinkList(){
+    public ImproveLinkList(){
         clear();
     }
     public final void clear(){
         firstNode = null;
         length = 0;
+        tempLastNode = null;
     }
 
-    private Node getNodeAt(int givenPosition){
-        Node positionNode = firstNode;
+    private ImproveNode getNodeAt(int givenPosition){
+        ImproveNode positionNode = firstNode;
         if (givenPosition<1 || givenPosition>length) {
             System.out.println("无效获取");
             return positionNode;
@@ -56,47 +33,45 @@ public class LinkList<T> implements AdtList<T> {
         }
         for (int i = 1; i < givenPosition; i++) {
             System.out.println("获取节点");
-            System.out.println(positionNode.data);
-            positionNode = positionNode.next;
+            System.out.println(positionNode.getData());
+            positionNode = positionNode.getNextNode();
         }
         return positionNode;
     }
 
     public boolean add(Object newEntry) {
-        Node newNode = new Node(newEntry);
+        ImproveNode newNode = new ImproveNode(newEntry);
         if ((isEmpty())) {
             firstNode = newNode;
-            System.out.println(firstNode.data);
-            System.out.println("第一个节点添加成功");
         }else {
-            Node lastNode = getNodeAt(length);
-            lastNode.next = newNode;
-            System.out.println(lastNode.data);
-            System.out.println("节点添加成功");
+            tempLastNode.setNextNode(newNode);
         }
+        tempLastNode = newNode;
         length++;
         return true;
     }
 
     public boolean add(int newPosition, Object newEntry) {
         boolean result = true;
-        Node newNode = new Node(newEntry);
+        ImproveNode newNode = new ImproveNode(newEntry);
         if (newPosition<1 || newPosition>length) {
             System.out.println("插入失败");
             result = false;
             return result;
         }
         if (newPosition == 1) {
-            Node frontNode = getNodeAt(newPosition);
             firstNode = newNode;
-            newNode.next = frontNode;
-        }else {
-            Node beforeNode = getNodeAt(newPosition - 1);
-            System.out.println("前一个节点：" + beforeNode.data);
-            Node lastNode = getNodeAt(newPosition);
-            System.out.println("后一个节点：" + lastNode.data);
-            beforeNode.next = newNode;
-            newNode.next = lastNode;
+            tempLastNode = newNode;
+        }else if(newPosition == length){
+            tempLastNode.setNextNode(newNode);
+            tempLastNode = newNode;
+        } else {
+            ImproveNode beforeNode = getNodeAt(newPosition - 1);
+            System.out.println("前一个节点：" + beforeNode.getData());
+            ImproveNode lastNode = getNodeAt(newPosition);
+            System.out.println("后一个节点：" + lastNode.getData());
+            beforeNode.setNextNode(newNode);
+            newNode.setNextNode(lastNode);
         }
         length++;
         return result;
@@ -108,18 +83,25 @@ public class LinkList<T> implements AdtList<T> {
             System.out.println("非法移除");
             return result;
         }
+        if (length == 1 && givePosition == 1) {
+            result = (T)firstNode.getData();
+            firstNode = null;
+            tempLastNode = null;
+            return result;
+        }
         if (givePosition == 1) {
-            result = (T)firstNode.data;
-            firstNode = firstNode.next;
+            result = (T)firstNode.getData();
+            firstNode.setNextNode(firstNode.getNextNode());
         }else if(givePosition>1 && givePosition<length) {
-            Node beforPosition = getNodeAt(givePosition-1);
-            Node afterPosition = getNodeAt(givePosition+1);
-            beforPosition.next = afterPosition;
-            result = (T)getNodeAt(givePosition).data;
+            ImproveNode beforPosition = getNodeAt(givePosition-1);
+            ImproveNode afterPosition = getNodeAt(givePosition+1);
+            beforPosition.setNextNode(afterPosition);
+            result = (T)getNodeAt(givePosition).getData();
         }else {
-            Node beforPosition = getNodeAt(givePosition-1);
-            beforPosition.next = null;
-            result = (T)getNodeAt(givePosition-1).data;
+            tempLastNode = null;
+            ImproveNode beforPosition = getNodeAt(givePosition-1);
+            tempLastNode = beforPosition;
+            result = (T)tempLastNode.getData();
         }
         length--;
         return result;
@@ -134,27 +116,30 @@ public class LinkList<T> implements AdtList<T> {
         if (givenPosition<1 || givenPosition >length || isEmpty()) {
             successfully = false;
         }else{
-            getNodeAt(givenPosition).data = newEntry;
+            System.out.println("测试替换");
+            getNodeAt(givenPosition).setData(newEntry);
         }
         return successfully;
     }
 
     public Object getEntry(int givenPosition) {
         T result = null;
-        if (givenPosition<1 || givenPosition >length || isEmpty() ) {
+        if (givenPosition<1 || givenPosition>length || isEmpty() ) {
             return result;
-        }else {
-            result = (T)getNodeAt(givenPosition).data;
+        }else if(givenPosition == length){
+            result=(T)tempLastNode.getData();
+        } else {
+            result = (T)getNodeAt(givenPosition).getData();
         }
         return result;
     }
 
     public boolean contains(Object anEntry) {
         boolean contains = false;
-        Node tempNode = firstNode;
+        ImproveNode tempNode = firstNode;
         for (int i = 1; i < length ; i++) {
-            tempNode = tempNode.next;
-            if (tempNode.data == anEntry) {
+            tempNode = tempNode.getNextNode();
+            if (tempNode.getData() == anEntry) {
                 contains = true;
             }
         }
@@ -175,17 +160,17 @@ public class LinkList<T> implements AdtList<T> {
 
     public void display() {
         StringBuffer stringBuffer = new StringBuffer();
-        Node node = firstNode;
-        stringBuffer.append(node.data+ " ");
+        ImproveNode node = firstNode;
+        stringBuffer.append(node.getData()+ " ");
         for (int i = 1; i < length ; i++) {
-            node = node.next;
-            stringBuffer.append(node.data+" ");
+            node = node.getNextNode();
+            stringBuffer.append(node.getData()+" ");
         }
         System.out.println(stringBuffer);
     }
 
     public static void main(String[] args) {
-        LinkList<String> stringLinkList = new LinkList<String>();
+        ImproveLinkList<String> stringLinkList = new ImproveLinkList<String>();
         stringLinkList.add("a");
         stringLinkList.add("c");
         stringLinkList.add("x");
@@ -205,11 +190,13 @@ public class LinkList<T> implements AdtList<T> {
         stringLinkList.display();
         System.out.println("移除操作3：");
         System.out.println(stringLinkList.remove(5));
+        System.out.println("最后一个节点数据");
+        System.out.println(stringLinkList.tempLastNode.getData());
         stringLinkList.display();
         System.out.println("替换数据：");
-        stringLinkList.replace(4,"xxx");
+        System.out.println(stringLinkList.replace(4,"xxx"));
         stringLinkList.display();
         System.out.println(stringLinkList.getEntry(4));
-        System.out.println(stringLinkList.contains("cd"));
+        System.out.println(stringLinkList.contains("xxx"));
     }
 }
