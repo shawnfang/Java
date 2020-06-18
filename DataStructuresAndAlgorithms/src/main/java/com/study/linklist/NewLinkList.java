@@ -1,5 +1,7 @@
 package com.study.linklist;
-
+/* 第七章 链表实现
+项目设计的第五题
+ */
 import com.study.linearlist.AdtList;
 
 public class NewLinkList<T> implements AdtList<T>,LinkListInterface<T> {
