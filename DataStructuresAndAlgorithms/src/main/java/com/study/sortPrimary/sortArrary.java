@@ -1,6 +1,18 @@
 package com.study.sortPrimary;
-
+/*
+十一章 排序入门--选择排序
+ */
 public class sortArrary {
+    public static <T extends Comparable<? super T>> void recursiveSelectionSort(T[] a,int first,int last){
+        if (first < last) {
+            recursiveSelectionSort(a,first+1,last);
+        }
+        int indexOfMin = getIndexofMin(a,first);
+        swap(a,first,indexOfMin);
+
+    }
+
+
     public static <T extends Comparable<? super T>> void selectionSort(T[] a,int n){
         for (int i = 0; i < n-1 ; i++) {
             int indexOfMin = getIndexofMin(a,i);
@@ -28,9 +40,18 @@ public class sortArrary {
     }
 
     public static void main(String[] args) {
-        Integer[] ar = {8,6,4,9,10,9,15,1};
+        StringBuffer stringBuffer = new StringBuffer();
+        Integer[] ar = {9,6,2,4,8};
         System.out.println(sortArrary.getIndexofMin(ar,0));
         System.out.println("测试：");
-        sortArrary.selectionSort(ar,8);
+        sortArrary.selectionSort(ar,5);
+        System.out.println("测试2：");
+        sortArrary.recursiveSelectionSort(ar,0,4);
+        System.out.println("测试3：");
+        for (int i:ar){
+            stringBuffer.append(i+" ");
+        }
+        System.out.println(stringBuffer);
+
     }
 }
