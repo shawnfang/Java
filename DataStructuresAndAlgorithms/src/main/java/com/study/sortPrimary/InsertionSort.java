@@ -26,8 +26,6 @@ public class InsertionSort {
 
     //方法二
     public static void insertForOrder(int firstUnsort,int a[],int first,int end){
-        int index = end;
-        int temp;
         for (int i = end; i >= first ; i--) {
             if (firstUnsort < a[i]) {
                 a[i+1]=a[i];
