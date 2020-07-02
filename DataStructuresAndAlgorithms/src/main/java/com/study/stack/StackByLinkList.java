@@ -34,7 +34,15 @@ public class StackByLinkList<T> implements StackInterface<T> {
     private Node top = null;
     private int count = 0;
     public boolean cleanStack() {
-        return false;
+        boolean cleanStackResult = true;
+        if (emptyStack()) {
+            cleanStackResult = false;
+        }else {
+            for (int i = count; i > 0 ; i--) {
+                popStack();
+            }
+        }
+        return cleanStackResult;
     }
 
     public boolean popStack() {
@@ -91,6 +99,8 @@ public class StackByLinkList<T> implements StackInterface<T> {
         stackByLinkList.pushStack(8);
         stackByLinkList.pushStack(5);
         stackByLinkList.popStack();
+        System.out.println(stackByLinkList.getTopStack());
+        stackByLinkList.cleanStack();
         System.out.println(stackByLinkList.getTopStack());
     }
 }
