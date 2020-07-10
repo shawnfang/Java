@@ -4,6 +4,12 @@ public class BinaryNode<T> implements BinaryNodeInterface<T> {
     private T data;
     private BinaryNode<T> leftNode;
     private BinaryNode<T> rightNode;
+    public BinaryNode(){
+        this(null);
+    }
+    public BinaryNode(T dataPosition){
+        this(dataPosition,null,null);
+    }
     public BinaryNode(T dataPosition,BinaryNode<T> leftChildNode,BinaryNode<T> rightChildNode){
         data = dataPosition;
         leftNode = leftChildNode;
@@ -46,11 +52,27 @@ public class BinaryNode<T> implements BinaryNodeInterface<T> {
     }
 
     public int getNumberOfNodes() {
-        return 0;
+        int leftNumber = 0;
+        int rightNumber = 0;
+        if (leftNode != null) {
+            leftNumber = leftNode.getNumberOfNodes();
+        }
+        if (rightNode != null) {
+            rightNumber = rightNode.getNumberOfNodes();
+        }
+        return 1+leftNumber+rightNumber;
     }
 
     public int getHeight() {
-        return 0;
+        return getHeight(this);
+    }
+
+    private int getHeight(BinaryNode<T> node){
+        int height = 0;
+        if (node != null) {
+            height = 1+Math.max(getHeight(node.leftNode),getHeight(node.rightNode));
+        }
+        return height;
     }
 
     public BinaryNodeInterface<T> copy() {
