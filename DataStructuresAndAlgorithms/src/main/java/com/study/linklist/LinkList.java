@@ -4,7 +4,7 @@ import com.study.linearlist.AdtList;
 
 public class LinkList<T> implements AdtList<T> {
 
-    private class Node<T> {
+    public class Node<T> {
         private T data;
         private Node next;
 
