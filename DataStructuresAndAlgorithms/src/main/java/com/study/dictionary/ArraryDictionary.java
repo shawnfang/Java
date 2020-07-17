@@ -13,18 +13,33 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
         count = 0;
     }
 
+    private int localIndex(K key){
+        int keyIndex = -1;
+        if (count != 0) {
+            for (int i = 0; i < dictionary.length; i++) {
+                if (key.equals(dictionary[i].getKey())) {
+                    return i;
+                }
+            }
+        }
+        return keyIndex;
+    }
+
     @Override
     public V add(K key, V value) {
         V result = null;
-        Entry<K, V> entry = new Entry<K, V>(key,value);
-        if (key != null && value != null && getSize()!=max_capacity) {
-            if (count!=max_capacity) {
-                dictionary[count].setKey(entry.getKey());
-                dictionary[count].setValue(entry.getValue());
-                result = entry.getValue();
+        int repeatIndex = localIndex(key);
+        if (repeatIndex != -1) {
+            dictionary[repeatIndex].setValue(value);
+            result = value;
+        }else if (key != null && value != null && getSize()!=max_capacity) {
+                dictionary[count] = new Entry<K, V>(key,value);
+                result = value;
                 count++;
-            }
         }
+        System.out.println(dictionary[0].getKey());
+        System.out.println(dictionary[0].getValue());
+        System.out.println(count);
         return result;
     }
 
@@ -70,5 +85,7 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
 
     public static void main(String[] args) {
         ArraryDictionary<Integer,String> arraryDictionary = new ArraryDictionary<Integer, String>();
+        arraryDictionary.add(1,"a");
+        arraryDictionary.add(1,"b");
     }
 }
