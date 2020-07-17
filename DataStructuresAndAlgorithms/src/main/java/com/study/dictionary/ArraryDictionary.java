@@ -45,17 +45,36 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
 
     @Override
     public V remove(K key) {
-        return null;
+        V result = null;
+        int keyIndex = localIndex(key);
+        if (keyIndex != -1) {
+            result = dictionary[keyIndex].getValue();
+            dictionary[keyIndex] = dictionary[getSize()-1];
+            dictionary[getSize()-1] = null;
+            count--;
+
+        }
+        return result;
     }
 
     @Override
     public V getValue(K key) {
-        return null;
+        V result = null;
+        int keyIndex = localIndex(key);
+        if (keyIndex != -1) {
+            result = dictionary[keyIndex].getValue();
+        }
+        return result;
     }
 
     @Override
     public boolean contain(K key) {
-        return false;
+        boolean containResult = false;
+        int keyIndex = localIndex(key);
+        if (keyIndex != -1 && dictionary[keyIndex] != null) {
+            containResult = true;
+        }
+        return containResult;
     }
 
     @Override
@@ -70,7 +89,11 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        boolean isEmptyResult = false;
+        if (count == 0) {
+            isEmptyResult = true;
+        }
+        return isEmptyResult;
     }
 
     @Override
