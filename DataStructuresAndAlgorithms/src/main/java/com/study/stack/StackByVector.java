@@ -25,6 +25,10 @@ public class StackByVector<T> implements StackInterface<T> {
         return cleanStackResult;
     }
 
+    /**
+     * 出栈
+     * @return
+     */
     public boolean popStack() {
         boolean popStackResult = true;
         if (!emptyStack()) {
@@ -38,6 +42,11 @@ public class StackByVector<T> implements StackInterface<T> {
         return popStackResult;
     }
 
+    /**
+     * 压栈
+     * @param newEntry
+     * @return
+     */
     public boolean pushStack(T newEntry) {
         boolean pushStackResult = true;
         if (list.size() == Inital_capacity) {
@@ -49,6 +58,10 @@ public class StackByVector<T> implements StackInterface<T> {
         return pushStackResult;
     }
 
+    /**
+     * 获取栈顶元素
+     * @return
+     */
     public T getTopStack() {
         return list.get(list.size()-1);
     }
