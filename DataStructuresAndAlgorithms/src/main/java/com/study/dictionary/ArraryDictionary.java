@@ -1,6 +1,5 @@
 package com.study.dictionary;
 
-import javax.swing.plaf.IconUIResource;
 import java.util.Iterator;
 
 public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
@@ -16,9 +15,12 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
     private int localIndex(K key){
         int keyIndex = -1;
         if (count != 0) {
-            for (int i = 0; i < dictionary.length; i++) {
-                if (key.equals(dictionary[i].getKey())) {
-                    return i;
+            for (int i = 0; i < count; i++) {
+                if (dictionary[i].getKey() == key) {
+                    keyIndex = i;
+                    break;
+                }else {
+                    keyIndex = count;
                 }
             }
         }
@@ -28,18 +30,16 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
     @Override
     public V add(K key, V value) {
         V result = null;
-        int repeatIndex = localIndex(key);
-        if (repeatIndex != -1) {
-            dictionary[repeatIndex].setValue(value);
+        int keyIndex = localIndex(key);
+        if (count == 0) {
+            dictionary[count] = new Entry<K, V>(key,value);
             result = value;
         }else if (key != null && value != null && getSize()!=max_capacity) {
-                dictionary[count] = new Entry<K, V>(key,value);
+                dictionary[keyIndex] = new Entry<K, V>(key,value);
                 result = value;
-                count++;
         }
-        System.out.println(dictionary[0].getKey());
-        System.out.println(dictionary[0].getValue());
-        System.out.println(count);
+        System.out.println(dictionary[count].getKey()+" "+dictionary[count].getValue());
+        count++;
         return result;
     }
 
@@ -52,7 +52,6 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
             dictionary[keyIndex] = dictionary[getSize()-1];
             dictionary[getSize()-1] = null;
             count--;
-
         }
         return result;
     }
@@ -109,6 +108,12 @@ public class ArraryDictionary<K,V> implements DictionaryInterface<K,V> {
     public static void main(String[] args) {
         ArraryDictionary<Integer,String> arraryDictionary = new ArraryDictionary<Integer, String>();
         arraryDictionary.add(1,"a");
-        arraryDictionary.add(1,"b");
+        arraryDictionary.add(2,"b");
+        arraryDictionary.add(3,"c");
+        arraryDictionary.add(4,"d");
+        System.out.println(arraryDictionary.remove(1));
+        arraryDictionary.add(1,"x");
+        System.out.println(arraryDictionary.getValue(3));
+        System.out.println(arraryDictionary.contain(5));
     }
 }
