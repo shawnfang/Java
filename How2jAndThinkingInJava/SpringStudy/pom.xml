@@ -4,6 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.5</version>
+        </dependency>
         <!-- 1)Spring核心 -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -30,6 +35,11 @@
             <artifactId>spring-webmvc</artifactId>
             <version>5.0.6.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.0.6.RELEASE</version>
+        </dependency>
         <!-- 实现slf4j接口并整合 -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -37,20 +47,9 @@
             <version>1.1.1</version>
         </dependency>
     </dependencies>
-    <groupId>com.shawnfang</groupId>
-    <artifactId>How2jAndThinkingInJava</artifactId>
+    <groupId>groupId</groupId>
+    <artifactId>SpringStudy</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
     
 </project>

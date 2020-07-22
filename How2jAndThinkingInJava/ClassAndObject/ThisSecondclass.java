@@ -32,5 +32,6 @@ public class ThisSecondclass  {
         ThisSecondclass TS1 =new ThisSecondclass("小天", 100);
         System.out.println(TS1.name);
         System.out.println(TS1.hp);
+        System.out.println(TS1.age);
     }
 }
