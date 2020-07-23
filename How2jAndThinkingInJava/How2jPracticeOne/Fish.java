@@ -2,7 +2,8 @@ package How2jPracticeOne;
 
 public class Fish extends Animal implements pet {
     private String name;
-    public Fish(){
+
+    public Fish() {
         super(0);
     }
 
@@ -13,7 +14,7 @@ public class Fish extends Animal implements pet {
 
     @Override
     public void setName(String name) {
-        this.name=name;
+        this.name = name;
     }
 
     @Override
@@ -30,7 +31,6 @@ public class Fish extends Animal implements pet {
     public void walk(int legs) {
         System.out.println("fish cann't walk");
     }
-
 
 
 }

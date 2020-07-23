@@ -1,4 +1,5 @@
 package ThinkingInJava.ThinkingInJavaChapterSeven;
+
 class Draw {
     public void draw() {
         System.out.println("draw");

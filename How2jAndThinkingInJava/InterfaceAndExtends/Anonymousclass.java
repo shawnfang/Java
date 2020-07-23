@@ -1,11 +1,11 @@
 package InterfaceAndExtends;
 
-public  abstract  class Anonymousclass {
+public abstract class Anonymousclass {
     String name;
     int hp;
     float armor;
 
-    public abstract void  attack();
+    public abstract void attack();
 
     public static void main(String[] args) {
         Wapon W = new Wapon();
@@ -30,7 +30,7 @@ public  abstract  class Anonymousclass {
         AbstractHeroclass A = new AbstractHeroclass() {
             @Override
             public void attack() {
-                System.out.println("新的进攻手段,能造成"+ damage +"滴血的伤害");
+                System.out.println("新的进攻手段,能造成" + damage + "滴血的伤害");
             }
         };
         A.attack();

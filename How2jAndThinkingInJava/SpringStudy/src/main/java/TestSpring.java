@@ -6,25 +6,25 @@ public class TestSpring {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
 
-        Category c = (Category)context.getBean("c");
+        Category c = (Category) context.getBean("c");
         System.out.println(c.getName());
         System.out.println(c.getId());
 
-        Product p = (Product)context.getBean("p");
+        Product p = (Product) context.getBean("p");
         System.out.println(p.getId());
         System.out.println(p.getProductName());
         System.out.println(p.getCategory().getName());
 
-        CategoryOther co = (CategoryOther)context.getBean("co");
+        CategoryOther co = (CategoryOther) context.getBean("co");
         System.out.println(co.getName());
         System.out.println(co.getCategory().getName());
         System.out.println("Resource 注解");
         System.out.println(co.getProduct().getProductName());
 
-        HeroSpring h = (HeroSpring)context.getBean("h");
+        HeroSpring h = (HeroSpring) context.getBean("h");
         System.out.println(h.getName());
 
-        ProductService ps = (ProductService)context.getBean("ps");
+        ProductService ps = (ProductService) context.getBean("ps");
         ps.doSomeService();
 
         CategoryService cs = (CategoryService) context.getBean("cs");

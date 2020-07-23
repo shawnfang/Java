@@ -7,7 +7,7 @@ import AnnotationStudy.MyId;
 import AnnotationStudy.MyTable;
 
 @MyEntity
-@MyTable(name="hero_")
+@MyTable(name = "hero_")
 public class AnnotationHero {
     private int id;
     private String name;
@@ -20,27 +20,34 @@ public class AnnotationHero {
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     @MyColumn("name_")
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     @MyColumn("damage_")
     public int getDamage() {
         return damage;
     }
+
     public void setDamage(int damage) {
         this.damage = damage;
     }
+
     @MyColumn("armor_")
     public int getArmor() {
         return armor;
     }
+
     public void setArmor(int armor) {
         this.armor = armor;
     }

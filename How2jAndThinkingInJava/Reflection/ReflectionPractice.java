@@ -1,4 +1,5 @@
 package Reflection;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,7 +8,7 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 
 public class ReflectionPractice {
-    @SuppressWarnings({ "rawtypes", "unchecked" })
+    @SuppressWarnings({"rawtypes", "unchecked"})
     public static void main(String[] args) throws Exception {
         // 从文件中获取类名和方法
         File springConfigFile = new File("D:\\github\\Java\\How2j\\Reflection\\spring.txt");

@@ -1,6 +1,6 @@
 package ClassAndObject;
 
-public enum  Season {
-    SPRING,SUMMER,AUTUMN,WINTER;
+public enum Season {
+    SPRING, SUMMER, AUTUMN, WINTER;
 
 }

@@ -1,7 +1,7 @@
 package DesignPatternDemo;
 
 public class HungrySingletonTestGiantDragon {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //通过new实例化会报错
         //GiantDragon g = new GiantDragon();
 

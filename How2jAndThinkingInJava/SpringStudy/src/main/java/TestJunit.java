@@ -21,12 +21,12 @@ public class TestJunit {
 
     //测试逻辑，打印c对象的名称
     @Test
-    public void testCategory(){
+    public void testCategory() {
         System.out.println(c.getName());
     }
 
     @Test
-    public void testHeroSpring(){
+    public void testHeroSpring() {
         System.out.println(h.getName());
     }
 }

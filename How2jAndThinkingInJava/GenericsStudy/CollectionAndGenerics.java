@@ -1,4 +1,5 @@
 package GenericsStudy;
+
 import java.util.ArrayList;
 
 import InterfaceAndExtends.AMHero;
@@ -18,8 +19,8 @@ public class CollectionAndGenerics {
         ArrayList heros = new ArrayList();
         heros.add(new AMHero());
         heros.add(new APHero());
-        APHero apHero = (APHero)heros.get(1);
-        AMHero amHero = (AMHero)heros.get(0);
+        APHero apHero = (APHero) heros.get(1);
+        AMHero amHero = (AMHero) heros.get(0);
 
         //使用泛型的好处：
         //泛型的用法是在容器后面添加<Type>

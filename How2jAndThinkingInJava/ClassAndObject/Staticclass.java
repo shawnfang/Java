@@ -8,7 +8,7 @@ public class Staticclass {
     // 实例属性，对象属性
     public String name;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
 
         Staticclass S = new Staticclass();

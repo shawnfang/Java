@@ -4,7 +4,7 @@ package ThinkingInJava.ThinkingInJavaChapterTwo;
 // 练习5,6
 public class ChapterTwoPracticeThree {
     public static void main(String[] args) {
-        class DataOnly{
+        class DataOnly {
             int i;
             double q;
             boolean b;

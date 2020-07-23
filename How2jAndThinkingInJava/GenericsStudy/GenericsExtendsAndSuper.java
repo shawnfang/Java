@@ -3,6 +3,7 @@ package GenericsStudy;
 import InterfaceAndExtends.APHero;
 import InterfaceAndExtends.HeroBoss;
 import InterfaceAndExtends.AMHero;
+
 import java.util.ArrayList;
 
 public class GenericsExtendsAndSuper {

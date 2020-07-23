@@ -6,15 +6,15 @@ public class Hero {
     int moveSpeed;
     float armor;
 
-    public void legendary(){
+    public void legendary() {
         System.out.println("超神");
     }
 
-    public float getHp(){
+    public float getHp() {
         return hp;
     }
 
-    public float recovery(float blood){
-        return hp = hp+blood;
+    public float recovery(float blood) {
+        return hp = hp + blood;
     }
 }

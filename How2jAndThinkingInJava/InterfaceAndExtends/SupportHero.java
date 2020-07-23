@@ -8,7 +8,7 @@ public class SupportHero extends HeroBoss {
         System.out.println("这是一个辅助攻击");
     }
 
-    public void supportAttack(){
+    public void supportAttack() {
 
         System.out.println("这是一个辅助英雄");
     }

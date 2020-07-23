@@ -1,6 +1,6 @@
 package InterfaceAndExtends;
 
-public class APHero extends HeroBoss implements physicHero,Mortal {
+public class APHero extends HeroBoss implements physicHero, Mortal {
     @Override
     public void die() {
         System.out.println("这是APHero的die方法");
@@ -12,14 +12,15 @@ public class APHero extends HeroBoss implements physicHero,Mortal {
     }
 
     //隐藏父类的battleWin方法
-    public static void battleWin(){
+    public static void battleWin() {
         System.out.println("ap hero battle win");
     }
 
-    public APHero(String name){
+    public APHero(String name) {
         super(name);
     }
-    public APHero(){
+
+    public APHero() {
 
     }
 

@@ -1,13 +1,13 @@
 package DesignPatternDemo;
 
 public class HungrySingletonHero {
-    private HungrySingletonHero(){
+    private HungrySingletonHero() {
 
     }
 
     private static HungrySingletonHero instance = new HungrySingletonHero();
 
-    public static HungrySingletonHero getInstance(){
+    public static HungrySingletonHero getInstance() {
         return instance;
     }
 }

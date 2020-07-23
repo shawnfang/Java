@@ -1,18 +1,19 @@
 package ThinkingInJava.ThinkingInJavaChapterThree;
-class Letter{
+
+class Letter {
     float m;
 }
 
-class Letter2{
+class Letter2 {
     int s;
 }
 
 public class OperatorsPthree {
-    static void f(Letter y){
+    static void f(Letter y) {
         y.m = 10086.10f;
     }
 
-    static void f2(Letter2 x){
+    static void f2(Letter2 x) {
         x.s = 100;
     }
 
@@ -37,7 +38,6 @@ public class OperatorsPthree {
         System.out.println(L2.s);
         System.out.println(L3.s);
         System.out.println(L3);
-
 
 
     }

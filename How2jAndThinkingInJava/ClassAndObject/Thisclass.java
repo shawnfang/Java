@@ -6,28 +6,27 @@ public class Thisclass extends Heroclass {
 
 
     // this指的是当前对象
-    public void showthis(){
-        System.out.println("打印当前对象的地址:" +this);
+    public void showthis() {
+        System.out.println("打印当前对象的地址:" + this);
     }
 
-    public  void setName(String name){
+    public void setName(String name) {
         name = name;
     }
 
-    public void setName2(String firstname){
+    public void setName2(String firstname) {
         name = firstname;
     }
 
     // this访问当前对象属性
-    public void setName3(String name){
+    public void setName3(String name) {
         // name 代表的是参数
         // this.name 是访问属性name
         this.name = name;
     }
 
 
-
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Thisclass t = new Thisclass();
         t.showthis();
 

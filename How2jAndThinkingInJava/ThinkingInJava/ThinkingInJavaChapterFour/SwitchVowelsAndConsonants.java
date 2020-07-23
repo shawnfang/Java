@@ -7,8 +7,8 @@ public class SwitchVowelsAndConsonants {
         Random rand = new Random(47);
         for (int i = 0; i < 100; i++) {
             int c = rand.nextInt(26) + 'a';
-            System.out.println((char)c+", "+c+": ");
-            switch (c){
+            System.out.println((char) c + ", " + c + ": ");
+            switch (c) {
                 case 'a':
                     System.out.println("vowel");
                     break;

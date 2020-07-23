@@ -15,6 +15,6 @@ public class OperatorsPfive {
 
         // 观察equals与 == 输出的结果
         System.out.println(d1.equals(d3));
-        System.out.println(d1==d3);
+        System.out.println(d1 == d3);
     }
 }

@@ -20,7 +20,7 @@ public class ControllingExecutionPseven {
             if (i == 99) {
                 break;
             }
-            System.out.println(i+"");
+            System.out.println(i + "");
         }
 
         testprint(1000);

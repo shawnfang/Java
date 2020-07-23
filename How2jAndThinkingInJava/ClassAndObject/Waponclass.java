@@ -5,7 +5,7 @@ package ClassAndObject;
 public class Waponclass extends Itenclass {
     int ac;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Waponclass W = new Waponclass();
         //从Iten而来的属性
         W.name = "无招";

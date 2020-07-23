@@ -4,6 +4,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
+
 //@Aspect 注解表示这是一个切面
 //@Component 表示这是一个bean,由Spring进行管理
 //@Around(value = "execution(* pojo.CategoryService.*(..))")

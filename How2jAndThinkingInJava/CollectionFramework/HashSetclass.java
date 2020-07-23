@@ -18,17 +18,17 @@ public class HashSetclass {
         //Set不提供get()来获取指定位置的元素
         //所以遍历需要用到迭代器，或者增强型for循环
         HashSet<Integer> iname = new HashSet<Integer>();
-        for (int i =0; i<20;i++){
+        for (int i = 0; i < 20; i++) {
             iname.add(i);
         }
         //遍历Set可以采用迭代器iterator
-        for (Iterator<Integer> iterator =iname.iterator();iterator.hasNext();){
+        for (Iterator<Integer> iterator = iname.iterator(); iterator.hasNext(); ) {
             Integer i = (Integer) iterator.next();
             System.out.println(i);
         }
 
         System.out.println("~~~~~~~~~~分割线~~~~~~~~~~~~");
-        for (Integer i : iname){
+        for (Integer i : iname) {
             System.out.println(i);
         }
 

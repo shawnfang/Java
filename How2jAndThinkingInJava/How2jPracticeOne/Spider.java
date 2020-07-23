@@ -6,10 +6,9 @@ public class Spider extends Animal {
         System.out.println("spider eating");
     }
 
-    public Spider(){
+    public Spider() {
         super(8);
     }
-
 
 
 }

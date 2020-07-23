@@ -7,8 +7,8 @@ import InterfaceAndExtends.HeroBoss;
 import java.util.ArrayList;
 
 public class TestGenerics {
-    public static void iterate(ArrayList<? extends HeroBoss> list){
-        for (HeroBoss h:list){
+    public static void iterate(ArrayList<? extends HeroBoss> list) {
+        for (HeroBoss h : list) {
             System.out.println(h.name);
         }
     }

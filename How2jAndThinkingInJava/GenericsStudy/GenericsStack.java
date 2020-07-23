@@ -1,4 +1,5 @@
 package GenericsStudy;
+
 import java.util.LinkedList;
 
 import InterfaceAndExtends.AMHero;
@@ -12,14 +13,16 @@ import InterfaceAndExtends.ItemPotion;
 //T是type的缩写，也可以使用任何其他的合法的变量，比如A,B,X都可以，但是一般约定成俗使用T，代表类型。
 public class GenericsStack<T> {
     LinkedList<T> values = new LinkedList<T>();
-    public void push(T t){
+
+    public void push(T t) {
         values.addLast(t);
     }
-    public T pull(){
+
+    public T pull() {
         return values.removeLast();
     }
 
-    public T peek(){
+    public T peek() {
         return values.getLast();
     }
 

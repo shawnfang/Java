@@ -5,7 +5,7 @@ package ThinkingInJava.ThinkingInJavaChapterTwo;
 public class ChapterTwoPracticeFive {
     String name;
 
-    int storage(String s){
+    int storage(String s) {
         return s.length() * 2;
     }
 

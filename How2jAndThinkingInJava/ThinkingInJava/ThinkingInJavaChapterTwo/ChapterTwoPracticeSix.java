@@ -13,7 +13,7 @@ public class ChapterTwoPracticeSix {
         char f = 'a';
         byte bt = 8;
 
-        Long a1 =a;
+        Long a1 = a;
         System.out.println(a1);
         System.out.println(a);
         Integer b1 = b;

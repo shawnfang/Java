@@ -4,7 +4,7 @@ public class Heroclass {
     int hp;
     String name;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // 创建对象，无法访问
         new Heroclass();
 

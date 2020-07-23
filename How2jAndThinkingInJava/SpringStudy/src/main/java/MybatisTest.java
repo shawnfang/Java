@@ -13,7 +13,7 @@ public class MybatisTest {
     private SpringWithMybatisMapper springWithMybatisMapper;
 
     @Test
-    public void testAdd(){
+    public void testAdd() {
         SpringWithMybatisPojo springWithMybatisPojo = new SpringWithMybatisPojo();
         springWithMybatisPojo.setName("new 1");
         springWithMybatisMapper.add(springWithMybatisPojo);

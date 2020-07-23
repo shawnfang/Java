@@ -6,7 +6,7 @@ public class Qualifierclass {
     // 没有修饰符代表package 同包类能继承也能访问，不同包类既不能访问也不能继承
     int age;
     // 可以被继承，同包类可访问，不同包类不能访问
-    protected  int moveSpeed;
+    protected int moveSpeed;
     // 公开，既可访问也可继承
     public String name;
 

@@ -3,7 +3,7 @@ package ClassAndObject;
 public class SeasonWorld {
     public static void main(String[] args) {
         Season season = Season.SPRING;
-        switch (season){
+        switch (season) {
             case AUTUMN:
                 System.out.println("秋天");
                 break;
@@ -18,7 +18,7 @@ public class SeasonWorld {
                 break;
         }
 
-        for (Season s : Season.values()){
+        for (Season s : Season.values()) {
             System.out.println(s);
         }
     }

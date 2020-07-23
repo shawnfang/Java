@@ -7,6 +7,6 @@ public class LazySingletonHeroTest {
         LazySingletonHero L3 = LazySingletonHero.getInstance();
 
         System.out.println(L1 == L2);
-        System.out.println(L2==L3);
+        System.out.println(L2 == L3);
     }
 }

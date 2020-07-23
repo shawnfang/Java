@@ -1,6 +1,6 @@
 package How2jPracticeOne;
 
-public class Cat extends Animal implements pet{
+public class Cat extends Animal implements pet {
     String name;
 
     @Override
@@ -8,11 +8,12 @@ public class Cat extends Animal implements pet{
         System.out.println("cat eating");
     }
 
-    public Cat(String name){
+    public Cat(String name) {
         super(4);
         this.name = name;
     }
-    public Cat(){
+
+    public Cat() {
         this("");
     }
 

@@ -4,18 +4,18 @@ public class Wapon {
     String name;
     int attrackSpeed;
     float moveSpeed;
-    final int hp=100;
+    final int hp = 100;
 
-    public Wapon(){
+    public Wapon() {
         System.out.println("这是一个无参数构造方法");
     }
 
-    public Wapon(String name){
+    public Wapon(String name) {
         this.name = name;
         System.out.println("这是一个有参数的构造方法");
     }
 
-    public Wapon(String name,int attrackSpeed){
+    public Wapon(String name, int attrackSpeed) {
         this.name = name;
         this.attrackSpeed = attrackSpeed;
         System.out.println("这是一个有两个参数的构造方法");
@@ -32,7 +32,7 @@ public class Wapon {
     }
 
     // final方法不能被继承的类进行重写
-    public final float getMoveSpeeds(){
+    public final float getMoveSpeeds() {
         return moveSpeed;
     }
 

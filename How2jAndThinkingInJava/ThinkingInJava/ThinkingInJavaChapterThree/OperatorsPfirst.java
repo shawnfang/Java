@@ -1,5 +1,7 @@
 package ThinkingInJava.ThinkingInJavaChapterThree;
+
 import java.util.*;
+
 import static net.mindview.util.Print.*;
 
 //使用简单语句打印

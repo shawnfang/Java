@@ -1,4 +1,5 @@
 package CollectionFramework;
+
 import InterfaceAndExtends.HeroBoss;
 
 import java.util.LinkedList;

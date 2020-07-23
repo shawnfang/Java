@@ -2,16 +2,17 @@ package InterfaceAndExtends;
 
 public class ItemPotion {
     String name;
-    int price ;
+    int price;
 
-    public void buy(){
+    public void buy() {
         System.out.println("购买");
     }
-    public void effect(){
+
+    public void effect() {
         System.out.println("物品使用效果");
     }
 
-    public void useItem(ItemPotion I){
+    public void useItem(ItemPotion I) {
         I.effect();
     }
 

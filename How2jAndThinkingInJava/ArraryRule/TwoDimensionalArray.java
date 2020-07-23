@@ -17,14 +17,14 @@ public class TwoDimensionalArray {
 
         // 指定内容的同时，分配空间
         int[][] c = new int[][]{
-                {1,2,4},
-                {4,5},
-                {6,7,8,9}
+                {1, 2, 4},
+                {4, 5},
+                {6, 7, 8, 9}
         };
 
         int[][] d = new int[5][5];
-        for (int i=0;i<5;i++) {
-            for (int j = 0; j < 5; j++){
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 d[i][j] = (int) (Math.random() * 100);
                 System.out.print(d[i][j] + " ");
             }
@@ -33,15 +33,15 @@ public class TwoDimensionalArray {
 
         int z = 0;
         String zz = null;
-        for(int x = 0;x<5;x++){
-            for(int y = 0;y<5;y++){
-                if(d[x][y] > z){
+        for (int x = 0; x < 5; x++) {
+            for (int y = 0; y < 5; y++) {
+                if (d[x][y] > z) {
                     z = d[x][y];
-                    zz = "["+x+","+y+"]";
+                    zz = "[" + x + "," + y + "]";
                 }
             }
         }
-        System.out.println("最大值是："+z);
-        System.out.println("坐标是："+ zz);
+        System.out.println("最大值是：" + z);
+        System.out.println("坐标是：" + zz);
     }
 }

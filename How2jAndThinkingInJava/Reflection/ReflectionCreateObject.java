@@ -1,29 +1,31 @@
 package Reflection;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+
 import Reflection.ReflectionHero;
 import sun.security.jca.GetInstance;
 
 public class ReflectionCreateObject {
     public static void main(String[] args) {
-    // 传统创建对象
-    ReflectionHero RH = new ReflectionHero();
+        // 传统创建对象
+        ReflectionHero RH = new ReflectionHero();
 
-    // 使用反射创建对象
-    try {
-        String className = "Reflection.ReflectionHero";
-        // 类对象
-        Class pClass = Class.forName(className);
-        // 构造器
-        Constructor c = pClass.getConstructor();
-        // 通过构造器实例化
-        ReflectionHero R = (ReflectionHero)c.newInstance();
-        R.name = "gareen";
-        System.out.println(R.name);
-        System.out.println(ReflectionHero.copyright);
-    } catch (Exception e){
-        e.printStackTrace();
+        // 使用反射创建对象
+        try {
+            String className = "Reflection.ReflectionHero";
+            // 类对象
+            Class pClass = Class.forName(className);
+            // 构造器
+            Constructor c = pClass.getConstructor();
+            // 通过构造器实例化
+            ReflectionHero R = (ReflectionHero) c.newInstance();
+            R.name = "gareen";
+            System.out.println(R.name);
+            System.out.println(ReflectionHero.copyright);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         //<二>
@@ -37,9 +39,9 @@ public class ReflectionCreateObject {
             // 获取类的name字段
             Field f1 = RH.getClass().getDeclaredField("name");
             // 修改这个字段的值
-            f1.set(RH,"teemo");
+            f1.set(RH, "teemo");
             System.out.println(RH.name);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -54,9 +56,9 @@ public class ReflectionCreateObject {
             // 获取这个名字叫做setName，参数类型是String的方法
             Method m = RH.getClass().getMethod("setName", String.class);
             // 对h对象，调用这个方法
-            m.invoke(RH,"盖盖");
+            m.invoke(RH, "盖盖");
             System.out.println(RH.name);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -1,20 +1,21 @@
 package ThinkingInJava.ThinkingInJavaChapterFour;
+
 /*
 while(Boolean-expression)
  statement
 */
 public class WhileTest {
-    static boolean condition(){
+    static boolean condition() {
         boolean result = Math.random() < 0.99;
-        System.out.println(result +".");
+        System.out.println(result + ".");
         return result;
     }
 
     public static void main(String[] args) {
-        while (condition()){
+        while (condition()) {
             System.out.println("Inside 'while'");
         }
         System.out.println("Exited 'while'");
-        
+
     }
 }

@@ -22,6 +22,6 @@ public class SpringWithMybatisPojo {
 
     @Override
     public String toString() {
-        return "SpringWithMybatisPojo [ id = " + id +", name=" + name + "]";
+        return "SpringWithMybatisPojo [ id = " + id + ", name=" + name + "]";
     }
 }

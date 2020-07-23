@@ -1,6 +1,6 @@
 package InterfaceAndExtends;
 
-public class AMHero extends HeroBoss implements magicHero,physicHero,Mortal {
+public class AMHero extends HeroBoss implements magicHero, physicHero, Mortal {
 
     @Override
     public void die() {
@@ -23,12 +23,10 @@ public class AMHero extends HeroBoss implements magicHero,physicHero,Mortal {
         AM.physicAttack();
 
         HeroBoss H = new HeroBoss();
-        AMHero AMH =new AMHero();
-        AMH = (AMHero)H;
+        AMHero AMH = new AMHero();
+        AMH = (AMHero) H;
 
         magicHero MC = AM;
-
-
 
 
     }
