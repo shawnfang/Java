@@ -1,6 +1,6 @@
 package ThreadDemo;
 
-public class ThreadTrain implements Runnable {
+public class NoLockThreadTrain implements Runnable {
     private int trainCount = 100;
     @Override
     public void run() {
@@ -22,9 +22,9 @@ public class ThreadTrain implements Runnable {
     }
 
     public static void main(String[] args) {
-        ThreadTrain threadTrain = new ThreadTrain();
-        Thread t1 = new Thread(threadTrain, "1号");
-        Thread t2 = new Thread(threadTrain, "2号");
+        NoLockThreadTrain threadTrain = new NoLockThreadTrain();
+        Thread t1 = new Thread(threadTrain, "1号线程");
+        Thread t2 = new Thread(threadTrain, "2号线程");
         t1.start();
         t2.start();
     }
