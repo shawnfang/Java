@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d44c2d2c-b2fd-44ec-940e-e1e26a3c4903" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/ArraryDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/ArraryDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/DictionaryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/DictionaryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/LinklistDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/LinklistDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/NodeEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/dictionary/NodeEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/AdtList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/AdtList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/ArraryListAdt.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/ArraryListAdt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/BagAdtList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/BagAdtList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/BagArraryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/BagArraryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/ExpandableArraryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/ExpandableArraryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/IgnoreFirstElem.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/IgnoreFirstElem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/NewArraryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/NewArraryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/VectorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linearlist/VectorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/ImproveLinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/ImproveLinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/ImproveNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/ImproveNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/LinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/LinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/LinkListInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/LinkListInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/NewLinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/linklist/NewLinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueByArrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueByArrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueByLinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueByLinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueByVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueByVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/queue/QueueInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/DisplayArrarylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/DisplayArrarylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/GetOpposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/GetOpposite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/RecursiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/recursive/RecursiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/search/ArrarySortSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/search/ArrarySortSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/search/LinkSortSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/search/LinkSortSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/sortPrimary/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/sortPrimary/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/sortPrimary/SortArrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/sortPrimary/SortArrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackByArrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackByArrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackByLinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackByLinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackByVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackByVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/stack/StackInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryNodeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryNodeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryTreeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/BinaryTreeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/TreeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/TreeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/TreeIteratorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/src/main/java/com/study/tree/TreeIteratorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/HelloWorld/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/HelloWorld/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/AdtList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/AdtList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/ArraryListAdt.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/ArraryListAdt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/BagAdtList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/BagAdtList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/BagArraryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/BagArraryList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/ExpandableArraryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/ExpandableArraryList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/IgnoreFirstElem.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/IgnoreFirstElem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/NewArraryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/NewArraryList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/VectorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linearlist/VectorList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/ImproveLinkList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/ImproveLinkList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/ImproveNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/ImproveNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkListInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/LinkListInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/NewLinkList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/linklist/NewLinkList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByArrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByArrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByLinkList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByLinkList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByLinkList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByLinkList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByLinkList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByLinkList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueByVector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/queue/QueueInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/recursive/DisplayArrarylistTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/recursive/DisplayArrarylistTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/recursive/RecursiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/recursive/RecursiveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/sortPrimary/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/sortPrimary/InsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/sortPrimary/SortArrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/sortPrimary/SortArrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByArrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByArrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByLinkList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByLinkList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByLinkList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByLinkList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByLinkList.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByLinkList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackByVector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/stack/StackInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryNodeInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryNodeInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryTreeInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/BinaryTreeInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/TreeInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/TreeInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/TreeIteratorInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresAndAlgorithms/target/classes/com/study/tree/TreeIteratorInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoCollection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DemoCollection/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoCollection/src/main/java/JsonToJsonObject/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/DemoCollection/src/main/java/JsonToJsonObject/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoCollection/src/main/java/ReflectionDemo/ObjecToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/DemoCollection/src/main/java/ReflectionDemo/ObjecToJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoCollection/src/main/java/ReflectionDemo/ObjectFieldUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/DemoCollection/src/main/java/ReflectionDemo/ObjectFieldUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoCollection/src/main/java/ReflectionDemo/ReflectionDemoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/DemoCollection/src/main/java/ReflectionDemo/ReflectionDemoOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/AnnotationHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/AnnotationHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/DBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/JDBCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/JDBCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/MyColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/MyColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/MyGeneratedValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/MyGeneratedValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/ParseHibernateAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/AnnotationStudy/ParseHibernateAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/TwoDimensionalArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/TwoDimensionalArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/createArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/createArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/operationArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/operationArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/operationArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ArraryRule/operationArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Adheroclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Adheroclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Constructclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Constructclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Heroclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Heroclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Paramclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Paramclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/PropertyInitclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/PropertyInitclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Qualifierclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Qualifierclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/SeasonWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/SeasonWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Staticclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Staticclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Staticmethodclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Staticmethodclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/ThisSecondclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/ThisSecondclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Thisclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Thisclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Waponclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ClassAndObject/Waponclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/ArraryListHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/ArraryListHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/ArraryListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/ArraryListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/ArraryListTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/ArraryListTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/Collectionsclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/Collectionsclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/HashMapclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/HashMapclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/HashSetclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/HashSetclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/LinkedListStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/CollectionFramework/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonGiantDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonGiantDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonHeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonHeroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonTestGiantDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/HungrySingletonTestGiantDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonGiantDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonGiantDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonHeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonHeroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonTestGiantDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/DesignPatternDemo/LazySingletonTestGiantDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/CollectionAndGenerics.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/CollectionAndGenerics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsDemoTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsExtendsAndSuper.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsExtendsAndSuper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/GenericsStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/TestGenerics.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/GenericsStudy/TestGenerics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Fish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/Spider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/How2jPracticeOne/pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/AMHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/AMHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/APHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/APHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Anonymousclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Anonymousclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/HeroBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/HeroBoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/InnerNotStaticclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/InnerNotStaticclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/InnerStaticclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/InnerStaticclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/ItemPotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/ItemPotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/LifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/LifePotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Locationclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Locationclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Mortal.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Mortal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/PhysicWapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/PhysicWapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/SupportHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/SupportHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Wapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/InterfaceAndExtends/Wapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ObjectOriented/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ObjectOriented/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ObjectOriented/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ObjectOriented/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ClassObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ClassObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionCreateObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionCreateObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/Reflection/ReflectionPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/TestJunit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/TestSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/mapper/SpringWithMybatisMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/mapper/SpringWithMybatisMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/mapper/SpringWithMybatisMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/mapper/SpringWithMybatisMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/CategoryOther.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/CategoryOther.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/LoggerAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/LoggerAspectCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/LoggerAspectCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/SpringWithMybatisPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/SpringStudy/src/main/java/pojo/SpringWithMybatisPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeEight.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeEight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeFiveAndSix.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeFiveAndSix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeNine.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeNine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/Overloading.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/Overloading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/SimpleConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/SimpleConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/SimpleConstructor2.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFive/SimpleConstructor2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/BreakAndContinue.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/BreakAndContinue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPfour.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPfour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPone.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPseven.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPseven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPthree.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPthree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPtwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPtwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ForEachString.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ForEachString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ForLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ForLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/IfElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/IfElse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ReturnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/ReturnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/SwitchVowelsAndConsonants.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/SwitchVowelsAndConsonants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/WhileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterFour/WhileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterSeven/Composition.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterSeven/Composition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterSeven/Delegation.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterSeven/Delegation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterSeven/ExtendsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterSeven/ExtendsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfive.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfour.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPsecond.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPsecond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPsix.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPsix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPthree.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPthree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/TernaryIfElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterThree/TernaryIfElse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeSix.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeSix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/out/production/SpringStudy/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/out/production/SpringStudy/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/How2jAndThinkingInJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/AnnotationHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/DBUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/JDBCConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/MyColumn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/MyEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/MyGeneratedValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/MyId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/MyTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/AnnotationStudy/ParseHibernateAnnotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ArraryRule/TwoDimensionalArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ArraryRule/createArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ArraryRule/operationArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ArraryRule/operationArrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Adheroclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Constructclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Heroclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Itenclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Paramclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/PropertyInitclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Qualifierclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Season.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/SeasonWorld$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/SeasonWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Staticclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Staticmethodclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/ThisSecondclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Thisclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ClassAndObject/Waponclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/ArraryListHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/ArraryListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/ArraryListTraversal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/Collectionsclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/HashMapclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/HashSetclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/LinkedListStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/LinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/CollectionFramework/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/HungrySingletonGiantDragon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/HungrySingletonHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/HungrySingletonHeroTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/HungrySingletonTestGiantDragon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/LazySingletonGiantDragon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/LazySingletonHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/LazySingletonHeroTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/DesignPatternDemo/LazySingletonTestGiantDragon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/CollectionAndGenerics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/Demo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/Fruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenerateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsDemoFive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsDemoFour$Generic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsDemoFour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsDemoOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsDemoThree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsDemoTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsExtendsAndSuper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/GenericsStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/GenericsStudy/TestGenerics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/How2jAndThinkingInJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/How2jPracticeOne/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/How2jPracticeOne/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/How2jPracticeOne/Fish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/How2jPracticeOne/Spider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/How2jPracticeOne/pet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/AMHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/APHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/AbstractHeroclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/Anonymousclass$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/Anonymousclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/ExtendsAbstractHeroclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/Finalclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/FinalclassExtends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/HeroBoss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/InnerNotStaticclass$BattleScore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/InnerNotStaticclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/InnerStaticclass$EnemyCrystal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/InnerStaticclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/ItemPotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/LifePotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/Locationclass$1Someclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/Locationclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/MagicPotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/Mortal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/PhysicWapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/SupportHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/Wapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/magicHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/InterfaceAndExtends/physicHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ObjectOriented/Hero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ObjectOriented/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/Reflection/ClassObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/Reflection/ReflectionCreateObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/Reflection/ReflectionDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/Reflection/ReflectionHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/Reflection/ReflectionPractice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/Reflection/spring.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/SpringStudy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/src/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/SpringStudy/src/mapper/SpringWithMybatisMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeEight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeFiveAndSix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeFour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeNine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeSeven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeThree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ChapterFivePracticeTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/ConstructorTestThis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/Overloading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/Rock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/Rock2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/SimpleConstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/SimpleConstructor2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/TestThis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFive/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/BreakAndContinue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPfour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPseven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPthree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ControllingExecutionPtwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ForEachString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ForLoop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/IfElse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/ReturnTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/SwitchVowelsAndConsonants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterFour/WhileTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/Art.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/Composition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/Delegation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/Draw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/Drawing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/Erase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/ExtendsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/SpaceShipControls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterSeven/Work.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/Letter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/Letter2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPeight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfirst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPfour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPnine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPsecond.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPsix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/OperatorsPthree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/Tank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterThree/TernaryIfElse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeFive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeFour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeSix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeThree$1DataOnly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeThree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeTwo$1ATypeName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/ThinkingInJava/ThinkingInJavaChapterTwo/ChapterTwoPracticeTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/How2j.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/META-INF/How2j.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2j/Reflection/spring.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/How2jAndThinkingInJava/META-INF/How2jAndThinkingInJava.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/out/production/SpringStudy/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/How2jAndThinkingInJava/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaProject/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1f4BAc9FjpTa2HSkHQqKW3HpHRp" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Java" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.explorer.springboot.SpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d44c2d2c-b2fd-44ec-940e-e1e26a3c4903" name="Default Changelist" comment="" />
+      <created>1595467341514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595467341514</updated>
+      <workItem from="1595467346336" duration="97000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
