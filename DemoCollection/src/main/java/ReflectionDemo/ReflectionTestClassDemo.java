@@ -232,9 +232,18 @@ public class ReflectionTestClassDemo {
         Method m = cls.getDeclaredMethod("getName");
         System.out.println(m.invoke(cls1));
 
-
     }
+
+    public static void getSuperClass() throws ClassNotFoundException {
+        /**
+         * 获取父类的Class
+         */
+        Class c = getClassTwo().getSuperclass();
+        System.out.println(c);
+    }
+    
+
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, NoSuchFieldException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        getPublicConstructor();
+        getSuperClass();
     }
 }
