@@ -7,6 +7,7 @@ public class ReflectionTestClassBig {
     public int heigh;
     public static int length = 100;
 
+
     public void setName(String name) {
         this.name = name;
     }

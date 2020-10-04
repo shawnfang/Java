@@ -51,6 +51,13 @@ public class ReflectionTestClass extends ReflectionTestClassBig {
         this.age = age;
     }
 
+    public static void setNewAge(int newAge){
+        System.out.println(newAge);
+    }
+    private void setNewAddress(String address){
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "ReflectionTestClass{" +
