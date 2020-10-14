@@ -241,7 +241,7 @@ public class ReflectionTestClassDemo {
         Class c = getClassTwo().getSuperclass();
         System.out.println(c);
     }
-    
+
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, NoSuchFieldException, IllegalAccessException, InvocationTargetException, InstantiationException {
         getSuperClass();
