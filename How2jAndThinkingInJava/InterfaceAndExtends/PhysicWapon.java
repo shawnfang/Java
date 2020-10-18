@@ -12,9 +12,9 @@ public class PhysicWapon extends Wapon {
     }
 
     public PhysicWapon(String name, int moveSpeed) {
-        this.name = name;
+        super(name);
         this.moveSpeed = moveSpeed;
-        System.out.println("这是一个没有使用super的构造方法");
+        System.out.println("这是一个没有使用super的构造方法"+name+" "+moveSpeed);
     }
 
 
