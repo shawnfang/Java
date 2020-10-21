@@ -12,8 +12,10 @@ public class main {
 
         virtualUser.setThreadCount(1);
         VirtualTomcat virtualTomcat = new VirtualTomcat();
-
-        virtualTomcat.Req(virtualUser.userHttp());
+        /*
+        这里还有问题
+         */
+        virtualTomcat.Req(virtualUser.Req(virtualUser.getVirtualHTTP_user()));
 
     }
 }

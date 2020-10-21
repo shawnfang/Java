@@ -18,19 +18,19 @@ public class VirtualTomcat extends VirtualHTTP implements HttpPro {
     }
 
     @Override
-    public void Req(VirtualHTTP req) {
+    public VirtualHTTP Req(VirtualHTTP req) {
         if(!req.getMethod().equals(virtualHTTPTomcat.getMethod())){
             System.out.println("您请求的方法错误");
-            return;
+            return null;
         }
         if(!req.getHost().equals(virtualHTTPTomcat.getHost())){
             System.out.println("您请求的域名错误");
-            return;
+            return null;
         }
         if (!req.getPort().equals(virtualHTTPTomcat.getPort())) {
             System.out.println("您请求的端口错误");
         }
-
+        return null;
     }
 
     @Override

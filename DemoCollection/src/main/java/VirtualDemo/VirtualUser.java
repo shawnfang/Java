@@ -79,22 +79,11 @@ public class VirtualUser implements HttpPro{
     }
 
 
-    public VirtualHTTP userHttp(){
-        VirtualHTTP virtualHTTP = new VirtualHTTP();
-        virtualHTTP.setHost(getUser_host());
-        virtualHTTP.setAuthorization(getUser_authorization());
-        virtualHTTP.setV_interface(getUser_interface());
-        virtualHTTP.setMethod(getUser_method());
-        virtualHTTP.setParam(getUser_param());
-        virtualHTTP.setPort(getUser_port());
-        setVirtualHTTP_user(virtualHTTP);
-        return getVirtualHTTP_user();
-    }
-
 
 
     @Override
-    public void Req(VirtualHTTP req) {
+    public VirtualHTTP Req(VirtualHTTP req) {
+        req = new VirtualHTTP();
         req.setHost(getUser_host());
         req.setAuthorization(getUser_authorization());
         req.setV_interface(getUser_interface());
@@ -102,6 +91,7 @@ public class VirtualUser implements HttpPro{
         req.setParam(getUser_param());
         req.setPort(getUser_port());
         setVirtualHTTP_user(req);
+        return getVirtualHTTP_user();
 
     }
 
