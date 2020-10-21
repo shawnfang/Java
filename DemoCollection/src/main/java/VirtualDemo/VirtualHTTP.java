@@ -3,6 +3,7 @@ package VirtualDemo;
 
 public class VirtualHTTP{
     public String host;
+    public String port;
     public String v_interface;
     public String method;
     public String accept;
@@ -11,6 +12,14 @@ public class VirtualHTTP{
     public String contentType;
     public String vCookie;
     public String param;
+
+    public void setPort(String port) {
+        this.port = port;
+    }
+
+    public String getPort() {
+        return port;
+    }
 
     public String getAccept() {
         return accept;

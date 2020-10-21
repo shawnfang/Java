@@ -1,7 +1,6 @@
 package VirtualDemo;
 
 public interface HttpPro {
-    void Req(VirtualUser req);
-    String Rep(VirtualUser rep);
-    void Body(VirtualUser body);
+    void Req(VirtualHTTP req);
+    String Rep(VirtualHTTP rep);
 }
