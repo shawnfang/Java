@@ -59,7 +59,10 @@ public class VirtualTomcat extends VirtualHTTP implements HttpPro {
     }
     public void receiveUser(VirtualUser virtualUser){
         System.out.println("用户发起请求线程数："+virtualUser.getThreadCount());
-        virtualUser.getThreadCount();
+        int count = virtualUser.getThreadCount();
+        TomcatThreads tomcatThreads = new TomcatThreads();
+        tomcatThreads.startThread(count);
+
         Req(virtualUser.Req(virtualUser.getReqInfo()));
     }
     @Override
