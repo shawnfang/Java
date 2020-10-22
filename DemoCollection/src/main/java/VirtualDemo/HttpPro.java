@@ -1,6 +1,8 @@
 package VirtualDemo;
 
+import java.util.Map;
+
 public interface HttpPro {
-    VirtualHTTP Req(VirtualHTTP req);
+    Map<String,String> Req(Map<String,String> req);
     String Rep(VirtualHTTP rep);
 }

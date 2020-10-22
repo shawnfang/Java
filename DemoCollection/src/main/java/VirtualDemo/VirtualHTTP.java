@@ -1,6 +1,9 @@
 package VirtualDemo;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class VirtualHTTP{
     public String host;
     public String port;
@@ -91,6 +94,21 @@ public class VirtualHTTP{
 
     public void setVir_useragent(String vir_useragent) {
         this.vir_useragent = vir_useragent;
+    }
+
+    public Map<String,String> getHttpMap(){
+        Map<String,String> httpMap = new HashMap<>();
+        httpMap.put("host",getHost());
+        httpMap.put("authorization",getAuthorization());
+        httpMap.put("v_interface",getV_interface());
+        httpMap.put("method",getMethod());
+        httpMap.put("port",getPort());
+        httpMap.put("param",getParam());
+        httpMap.put("accept",getParam());
+        httpMap.put("vir_useragent",getVir_useragent());
+        httpMap.put("contentType",getContentType());
+        httpMap.put("vCookie",getvCookie());
+        return httpMap;
     }
 
     @Override
