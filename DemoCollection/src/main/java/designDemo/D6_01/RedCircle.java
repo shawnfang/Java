@@ -3,7 +3,7 @@ package designDemo.D6_01;
 public class RedCircle implements DrawAPI {
 
     @Override
-    public void drawCircle(int radius, int x, int y) {
-        System.out.println("Drawing Circle[ color: red, radius: " + radius + ", x: " + x + ", " + y + "]");
+    public void drawCircle() {
+        System.out.println("Drawing Circle[ color: red, radius: ");
     }
 }
