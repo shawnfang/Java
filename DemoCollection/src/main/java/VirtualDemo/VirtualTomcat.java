@@ -2,7 +2,7 @@ package VirtualDemo;
 
 import java.util.Map;
 
-public class VirtualTomcat extends VirtualHTTP implements HttpPro {
+public class VirtualTomcat extends VirtualHTTP implements HttpPro,Runnable {
     /*
     最大连接数
      */
@@ -57,14 +57,11 @@ public class VirtualTomcat extends VirtualHTTP implements HttpPro {
     public void setVirtualUser(VirtualUser virtualUser) {
         this.virtualUser = virtualUser;
     }
-    public void receiveUser(VirtualUser virtualUser){
-        System.out.println("用户发起请求线程数："+virtualUser.getThreadCount());
-        int count = virtualUser.getThreadCount();
-        TomcatThreads tomcatThreads = new TomcatThreads();
-        tomcatThreads.startThread(count);
 
+    public void receiveUser(){
         Req(virtualUser.Req(virtualUser.getReqInfo()));
     }
+
     @Override
     public Map<String,String> Req(Map<String,String> req) {
         System.out.println("收到用户的请求");
@@ -86,5 +83,22 @@ public class VirtualTomcat extends VirtualHTTP implements HttpPro {
     @Override
     public String Rep(VirtualHTTP rep) {
         return null;
+    }
+
+    @Override
+    public void run() {
+        boolean exit = false;
+        System.out.println("当前的线程id:"+Thread.currentThread().getId()+" 开始运行");
+        while (!exit) {
+            try {
+                Thread.sleep(100);
+                System.out.println("当前的线程id " + Thread.currentThread().getId() + "的状态是：" + Thread.currentThread().getState());
+                receiveUser();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            exit = true;
+        }
+        System.out.println("当前的线程id:"+Thread.currentThread().getId()+" 结束运行");
     }
 }
